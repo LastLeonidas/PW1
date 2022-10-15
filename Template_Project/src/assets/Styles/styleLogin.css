@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "LEMON MILK", serif;
+}
+
+html {
+    background-image: url("src/assets/Media/Imagenes/fotoLogin.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    padding-left: 70px;
+    padding-top: 45px;
+}
+
+.wrapper {
+    width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    float: left;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .1rem #fff,
+    0 0 1rem #E31164FF,
+    0 0 1rem #E31164FF,
+    0 0 2rem #E31164FF,
+    inset 0 0 1rem #E31164FF;
+}
+.wrapper .logo-title {
+    display: flex;
+    width: 200%;
+}
+.wrapper .logo-title .title {
+    width: 50%;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.wrapper .form-container  {
+    width: 100%;
+}
+.wrapper .form-container form {
+
+}
+.form-inner form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.form-inner form .field input {
+    font-family: Coolvetica, serif;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+.form-inner form .field input:focus {
+    border-color: rgba(245,7,77,1);
+}
+.form-inner form .pass-link {
+    margin-top: 10px;
+
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a {
+    color: rgba(245,7,77,1);
+    text-decoration: none;
+}
+
+.form-inner form .signup-link {
+    text-align: center;
+    margin-top: 30px;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover {
+    text-decoration: underline;
+}
+form .field input[type="submit"] {
+    color: #fff;
+    font-family: "LEMON MILK", serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(257deg, rgba(245,7,77,1) 0%, rgba(227,17,100,1) 50%, rgba(198,38,63,1) 100%);
+}
