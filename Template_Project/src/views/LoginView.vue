@@ -31,7 +31,7 @@
               </div>
               <div class="signup-link">
                 Not a Member?
-                <a href="src/views/RegisterView.vue">Signup Now</a>
+                <a href="/register">Signup Now</a>
               </div>
             </form>
           </div>
