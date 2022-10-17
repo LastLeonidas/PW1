@@ -6,7 +6,7 @@
 }
 
 html {
-    background-image: url("../media/imagenes/fotoregister.jpg");
+    background-image: url("../media/imagenes/fotoRegister.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,7 +16,7 @@ html, body {
     display: flex;
     height: 100%;
     padding-left: 60px;
-    padding-top: 70px;
+    padding-top: 60px;
 }
 
 .wrapper {
