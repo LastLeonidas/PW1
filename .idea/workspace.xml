@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Eliminados Archivos de Register" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="S1-PantallaLogin" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Foc8R0fjXLOPtI1jm1h2IqEb38" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Template_Project/src/assets/styles" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="" />
+      <created>1665161718410</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665161718410</updated>
+      <workItem from="1665161720528" duration="227000" />
+      <workItem from="1665161956534" duration="287000" />
+      <workItem from="1665162246884" duration="700000" />
+      <workItem from="1665162991408" duration="212000" />
+      <workItem from="1665163217722" duration="2420000" />
+      <workItem from="1665409144535" duration="50000" />
+      <workItem from="1665409910656" duration="164000" />
+      <workItem from="1665490221118" duration="137000" />
+      <workItem from="1665509038186" duration="142000" />
+      <workItem from="1665509192663" duration="1702000" />
+      <workItem from="1665849703119" duration="894000" />
+      <workItem from="1665850602858" duration="707000" />
+      <workItem from="1666007277653" duration="403000" />
+      <workItem from="1666007692338" duration="207000" />
+      <workItem from="1666007906380" duration="544000" />
+    </task>
+    <task id="LOCAL-00001" summary="Pantalla Login UP">
+      <created>1665850348336</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665850348336</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Arreglado Error al Mostrar Background">
+      <created>1665850753031</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665850753031</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Link Activo de Login a Register al Clicar en Sign Up">
+      <created>1665851273873</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665851273873</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Eliminados Archivos de Register">
+      <created>1666008221562</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666008221562</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Pantalla Login UP" />
+    <MESSAGE value="Arreglado Error al Mostrar Background" />
+    <MESSAGE value="Link Activo de Login a Register al Clicar en Sign Up" />
+    <MESSAGE value="Eliminados Archivos de Register" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eliminados Archivos de Register" />
+  </component>
+</project>
