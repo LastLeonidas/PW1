@@ -1,0 +1,78 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 96vh;
+}
+
+.seccionDerecha {
+    width: 50vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 45vw;
+    height: 95vh;
+    object-fit: cover;
+}
+
+.seccionIzquierda {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar {
+    /*background-color: aqua;*/
+    height: 15vw;
+    width: 20vw;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    /*background-color: antiquewhite;*/
+    color: #BB1C3C;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #D9D9D9;
+    width: 300px;
+    height: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.box > input {
+    flex: 1;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+input {
+    background-color: #D9D9D9;
+}
+
+::placeholder {
+    color: #F4F4F4;
+}
