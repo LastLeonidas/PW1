@@ -1,0 +1,68 @@
+
+.body {
+    background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+}
+
+.top {
+    background: crimson;
+    height: 10vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.searchBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+    width: 20vw;
+    margin-left: 5vh;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+    width: 10vw;
+}
+
+button {
+    border-radius: 10px;
+}
+
+/*.buttonAdd {
+    border-radius: 10px;
+}*/
+
+.h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.recyclerView {
+    display: flex;
+    flex-direction: row;
+}
+
+.list {
+
+}
+
+
+
+
+
