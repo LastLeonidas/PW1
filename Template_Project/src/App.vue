@@ -44,7 +44,7 @@ import { RouterLink, RouterView } from "vue-router";
       </div>
 
       <div class="box-social-apps">
-        <h2> SÍGUENOS</h2>
+        <h2>SÍGUENOS</h2>
         <div class="socialApps-logos">
 
           <a href="https://twitter.com/lasallebcn?lang=es"> <font-awesome-icon icon="fa-brands fa-square-twitter" size="3x"/></a>

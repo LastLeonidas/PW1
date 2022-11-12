@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Últimos cambios">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Template_Project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/media/imagenes/Picture FE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/media/imagenes/fondo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleAgregarAmigo.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleAgregarAmigo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Template_Project/src/views/AgregarAmigoView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/views/AgregarAmigoView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
