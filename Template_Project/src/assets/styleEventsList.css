@@ -1,0 +1,43 @@
+p{
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-style: italic;
+    font-size: 3vh;
+}
+
+h2{
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+    font-family: Inter, sans-serif;
+    font-size: 5vh;
+}
+
+img{
+    width: 30vw;
+    height: 40vh;
+    border-radius: 5vh;
+}
+
+button{
+    width: 10vw;
+    height: 8vh;
+    color: white;
+    font-size: 3vh;
+    border-radius: 20vh;
+    background: #BB1C3C;
+    border-color: #BB1C3C;
+    margin: auto 5vh 0 auto;
+    font-family: Inter, sans-serif;
+}
+.event{
+    align-content: center;
+    display: flex;
+    border: 5vh;
+    border-radius: 5vh;
+    padding: 5vh;
+}
+.infoEvent{
+    margin-left: 5vw;
+    margin-top: 0;
+    margin-bottom: auto;
+}
