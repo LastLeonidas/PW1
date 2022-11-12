@@ -17,11 +17,3 @@
     </section>
   </section>
 </template>
-
-<script>
-export default {
-  name: "AgregarAmigo",
-};
-</script>
-
-<style scoped></style>

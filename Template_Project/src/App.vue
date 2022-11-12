@@ -7,13 +7,11 @@ import { RouterLink, RouterView } from "vue-router";
     <section class="navbar">
       <a href="/"><img src="src/assets/media/imagenes/logoOpenEventsBlanco.svg" alt="Logo Open Events"></a>
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/addfriend">addfriend</RouterLink>
         <ul class="nav_links">
           <li><RouterLink to="/">Home</RouterLink></li>
           <li><RouterLink to="/events">Events</RouterLink></li>
           <li><RouterLink to="/about">About</RouterLink></li>
+          <li><RouterLink to="/addfriend">Add Friend</RouterLink></li>
         </ul>
       </nav>
       <RouterLink to="/login"><button class="btnHeader">LOGIN</button></RouterLink>
