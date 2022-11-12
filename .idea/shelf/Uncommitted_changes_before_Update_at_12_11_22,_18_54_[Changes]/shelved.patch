@@ -1,0 +1,58 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -1,13 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Últimos cambios">
++    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="commit merge la S3">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Template_Project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/App.vue" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/media/imagenes/Picture FE.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/media/imagenes/fondo2.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Template_Project/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/router/index.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Template_Project/src/views/AgregarAmigoView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/views/AgregarAmigoView.vue" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -25,7 +20,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="S3-Pantalla-Agregar-Amigo" />
++        <entry key="$PROJECT_DIR$" value="dev" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -149,7 +144,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1668259734221</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="commit merge la S3">
++      <created>1668275058933</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1668275058933</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -176,6 +178,7 @@
+     <MESSAGE value="Pantalla Register finalizada junto a al footer y navbar." />
+     <MESSAGE value="Fixed Social Logos Footer" />
+     <MESSAGE value="Fixed Error Navbar" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Error Navbar" />
++    <MESSAGE value="commit merge la S3" />
++    <option name="LAST_COMMIT_MESSAGE" value="commit merge la S3" />
+   </component>
+ </project>
+\ No newline at end of file

@@ -4,6 +4,10 @@
     <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Fixed Pantalla Add Friends Again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleAgregarAmigo.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleAgregarAmigo.css" afterDir="false" />
+    <list default="true" id="a1906b9a-5488-4b92-8062-06705ae32d40" name="Changes" comment="commit merge la S3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleUsuarioHome.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleUsuarioHome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_Project/src/views/UsuarioHome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/views/UsuarioHome.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Vue Single File Component" />
         <option value="CSS File" />
       </list>
@@ -22,6 +27,7 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="S3-Pantalla-Agregar-Amigo" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +36,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Foc8R0fjXLOPtI1jm1h2IqEb38" />
+  <component name="ProjectId" id="2H2FR33RJZMezq2hHbpHgqQ6MSl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -40,6 +47,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -54,6 +62,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Template_Project/src/assets/styles" />
+      <recent name="$PROJECT_DIR$/Template_Project/src/assets/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -160,6 +169,53 @@
       <updated>1668275927987</updated>
     </task>
     <option name="localTasksCounter" value="11" />
+      <changelist id="a1906b9a-5488-4b92-8062-06705ae32d40" name="Changes" comment="" />
+      <created>1667475262641</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667475262641</updated>
+      <workItem from="1667475270717" duration="6597000" />
+      <workItem from="1667588106824" duration="1516000" />
+      <workItem from="1668108751159" duration="556000" />
+      <workItem from="1668245291928" duration="4099000" />
+      <workItem from="1668249875542" duration="2950000" />
+    </task>
+    <task id="LOCAL-00001" summary="He aplicado algunos retoques al icono de la search bar así como cambiado el estilo de la letra al título.">
+      <created>1667485274185</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667485274185</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Estructura de la nueva vista hecha!">
+      <created>1668246236186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668246236186</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Pequeño error de indexación con el server">
+      <created>1668246436689</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668246436689</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Pantalla acabada. Faltaran los últimos retoques.">
+      <created>1668251690547</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668251690547</updated>
+    </task>
+    <task id="LOCAL-00005" summary="He cambiado la fuente del texto.">
+      <created>1668252787223</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668252787223</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,5 +245,11 @@
     <MESSAGE value="Fixed Pantalla Add Friends" />
     <MESSAGE value="Fixed Pantalla Add Friends Again" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixed Pantalla Add Friends Again" />
+    <MESSAGE value="He aplicado algunos retoques al icono de la search bar así como cambiado el estilo de la letra al título." />
+    <MESSAGE value="Estructura de la nueva vista hecha!" />
+    <MESSAGE value="Pequeño error de indexación con el server" />
+    <MESSAGE value="Pantalla acabada. Faltaran los últimos retoques." />
+    <MESSAGE value="He cambiado la fuente del texto." />
+    <option name="LAST_COMMIT_MESSAGE" value="He cambiado la fuente del texto." />
   </component>
 </project>
