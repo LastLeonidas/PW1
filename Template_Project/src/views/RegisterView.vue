@@ -48,7 +48,9 @@
               </div>
             </div>
             <div class="button">
-              <input type="submit" value="Register">
+              <a href="/usuarioHome">
+                <input type="submit" value="Register" />
+              </a>
             </div>
 
             <div class="signIn-link">Already a member? <a href="/login">Login Now</a></div>

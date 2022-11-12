@@ -19,7 +19,7 @@
             </div>
             <div class="pass-link"><a href="#">Forgot password?</a></div>
             <div class="field">
-              <a href="/login">
+              <a href="/usuarioHome">
                 <input type="submit" value="Login" id="buttonlogin" />
               </a>
             </div>

@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Fixed Pantalla Add Friends Again">
+    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Arreglada la Disposicion de la foto en Add Friends">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleAgregarAmigo.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleAgregarAmigo.css" afterDir="false" />
-    <list default="true" id="a1906b9a-5488-4b92-8062-06705ae32d40" name="Changes" comment="commit merge la S3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleUsuarioHome.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleUsuarioHome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/views/UsuarioHome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/views/UsuarioHome.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +93,7 @@
       <workItem from="1668157486946" duration="15000" />
       <workItem from="1668248213427" duration="2032000" />
       <workItem from="1668250258974" duration="6624000" />
+      <workItem from="1668277379720" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="Pantalla Login UP">
       <created>1665850348336</created>
@@ -168,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668275927987</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Arreglada la Disposicion de la foto en Add Friends">
+      <created>1668276466573</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668276466573</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
       <changelist id="a1906b9a-5488-4b92-8062-06705ae32d40" name="Changes" comment="" />
       <created>1667475262641</created>
       <option name="number" value="Default" />
@@ -244,7 +248,8 @@
     <MESSAGE value="Fixed Error Navbar" />
     <MESSAGE value="Fixed Pantalla Add Friends" />
     <MESSAGE value="Fixed Pantalla Add Friends Again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Pantalla Add Friends Again" />
+    <MESSAGE value="Arreglada la Disposicion de la foto en Add Friends" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglada la Disposicion de la foto en Add Friends" />
     <MESSAGE value="He aplicado algunos retoques al icono de la search bar así como cambiado el estilo de la letra al título." />
     <MESSAGE value="Estructura de la nueva vista hecha!" />
     <MESSAGE value="Pequeño error de indexación con el server" />
