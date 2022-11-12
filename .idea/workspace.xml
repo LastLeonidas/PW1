@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Pantalla Register finalizada junto a al footer y navbar.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/assets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/views/HomeView.vue" afterDir="false" />
-    </list>
+    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Fixed Error Navbar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +82,7 @@
       <workItem from="1667469570897" duration="700000" />
       <workItem from="1668157486946" duration="15000" />
       <workItem from="1668248213427" duration="2032000" />
-      <workItem from="1668250258974" duration="6208000" />
+      <workItem from="1668250258974" duration="6624000" />
     </task>
     <task id="LOCAL-00001" summary="Pantalla Login UP">
       <created>1665850348336</created>
@@ -132,7 +126,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668253827491</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed Social Logos Footer">
+      <created>1668259371557</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668259371557</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed Error Navbar">
+      <created>1668259734221</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668259734221</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +165,8 @@
     <MESSAGE value="Eliminados Archivos de Register" />
     <MESSAGE value="RegisterView UP" />
     <MESSAGE value="Pantalla Register finalizada junto a al footer y navbar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Pantalla Register finalizada junto a al footer y navbar." />
+    <MESSAGE value="Fixed Social Logos Footer" />
+    <MESSAGE value="Fixed Error Navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Error Navbar" />
   </component>
 </project>
