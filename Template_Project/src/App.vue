@@ -1,20 +1,67 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 </script>
-
 <template>
+
   <header>
+    <section class="navbar">
+      <img class="logo-navbar" src="src/assets/media/imagenes/logoOpenEventsBlanco.svg" alt="Logo Open Events">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/register">Register</RouterLink>
+        <ul class="nav_links">
+          <li><RouterLink to="/">Home</RouterLink></li>
+          <li><RouterLink to="/about">About</RouterLink></li>
+          <li><RouterLink to="/register">Register</RouterLink></li>
+        </ul>
       </nav>
+      <RouterLink to="/register"><button class="btnHeader">LOGIN</button></RouterLink>
+    </section>
   </header>
+
   <main>
-    <RouterView />
+    <RouterView></RouterView>
   </main>
 
-</template>
+  <footer class="footer">
+    <section class="section-boxes">
+      <div class="box-logo">
+        <figure>
+          <a href="#">
+            <img src="src/assets/media/imagenes/logoOpenEventsBlanco.svg" alt="Logo Open Events">
+          </a>
+        </figure>
+      </div>
 
-<style scoped>
-</style>
+      <div class="box-description">
+        <h2>SOBRE NOSOTROS</h2>
+        <p>Somos el grupo PWIA4, formado por: </p>
+        <div class="members-list">
+          <ul>
+            <li>Alba Mayol</li>
+            <li>Kevin Eljarrat</li>
+            <li>Sandra Corral</li>
+            <li>Leonard Sangrà</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box-social-apps">
+        <h2> SÍGUENOS</h2>
+        <div class="socialApps-logos">
+
+          <a href="https://twitter.com/lasallebcn?lang=es"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
+          <a href="https://www.facebook.com/LaSalleBCN" class="fa-brands fa-square-facebook fa-3x"></a>
+          <a href="https://www.instagram.com/lasallebcn/" class="fa-brands fa-square-instagram fa-3x"></a>
+          <a href="https://www.youtube.com/user/BesLaSalle" class="fa-brands fa-square-youtube fa-3x"></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="copyright">
+        <small>&copy; 2022 <b>Open Events.</b> - All Rights Reserved.</small>
+      </div>
+    </section>
+
+  </footer>
+
+</template>

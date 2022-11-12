@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Fixes Login" />
+    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="RegisterView UP">
+      <change afterPath="$PROJECT_DIR$/Template_Project/src/assets/media/imagenes/Foto About.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template_Project/src/assets/media/imagenes/FotoLogin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template_Project/src/assets/media/imagenes/Picture FE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template_Project/src/assets/media/imagenes/fondo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template_Project/src/assets/media/imagenes/logoOpenEventsBlanco.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template_Project/src/assets/media/imagenes/logoOpenEventsRosa.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_Project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_Project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_Project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/assets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleRegister.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleRegister.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_Project/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_Project/src/views/RegisterView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/views/RegisterView.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +89,15 @@
       <workItem from="1666007277653" duration="403000" />
       <workItem from="1666007692338" duration="207000" />
       <workItem from="1666007906380" duration="544000" />
+      <workItem from="1666009104944" duration="30000" />
+      <workItem from="1666169010361" duration="76000" />
+      <workItem from="1666190203670" duration="2060000" />
+      <workItem from="1666718782179" duration="431000" />
+      <workItem from="1666720873047" duration="255000" />
+      <workItem from="1667469570897" duration="700000" />
+      <workItem from="1668157486946" duration="15000" />
+      <workItem from="1668248213427" duration="2032000" />
+      <workItem from="1668250258974" duration="3197000" />
     </task>
     <task id="LOCAL-00001" summary="Pantalla Login UP">
       <created>1665850348336</created>
@@ -103,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666008221562</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="RegisterView UP">
+      <created>1666009120366</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666009120366</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +157,7 @@
     <MESSAGE value="Arreglado Error al Mostrar Background" />
     <MESSAGE value="Link Activo de Login a Register al Clicar en Sign Up" />
     <MESSAGE value="Eliminados Archivos de Register" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminados Archivos de Register" />
+    <MESSAGE value="RegisterView UP" />
+    <option name="LAST_COMMIT_MESSAGE" value="RegisterView UP" />
   </component>
 </project>
