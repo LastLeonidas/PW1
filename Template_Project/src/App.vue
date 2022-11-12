@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from "vue-router";
 
   <header>
     <section class="navbar">
-      <img class="logo-navbar" src="src/assets/media/imagenes/logoOpenEventsBlanco.svg" alt="Logo Open Events">
+      <a href="/"><img src="src/assets/media/imagenes/logoOpenEventsBlanco.svg" alt="Logo Open Events"></a>
       <nav>
         <ul class="nav_links">
           <li><RouterLink to="/">Home</RouterLink></li>
@@ -25,9 +25,7 @@ import { RouterLink, RouterView } from "vue-router";
     <section class="section-boxes">
       <div class="box-logo">
         <figure>
-          <a href="#">
-            <img src="src/assets/media/imagenes/logoOpenEventsBlanco.svg" alt="Logo Open Events">
-          </a>
+          <a href="/"><img src="src/assets/media/imagenes/logoOpenEventsBlanco.svg" alt="Logo Open Events"></a>
         </figure>
       </div>
 
