@@ -48,10 +48,10 @@ import { RouterLink, RouterView } from "vue-router";
         <h2> SÍGUENOS</h2>
         <div class="socialApps-logos">
 
-          <a href="https://twitter.com/lasallebcn?lang=es"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
-          <a href="https://www.facebook.com/LaSalleBCN" class="fa-brands fa-square-facebook fa-3x"></a>
-          <a href="https://www.instagram.com/lasallebcn/" class="fa-brands fa-square-instagram fa-3x"></a>
-          <a href="https://www.youtube.com/user/BesLaSalle" class="fa-brands fa-square-youtube fa-3x"></a>
+          <a href="https://twitter.com/lasallebcn?lang=es"> <font-awesome-icon icon="fa-brands fa-square-twitter" size="3x"/></a>
+          <a href="https://www.facebook.com/LaSalleBCN"> <font-awesome-icon icon="fa-brands fa-square-facebook" size="3x"/></a>
+          <a href="https://www.instagram.com/lasallebcn/"> <font-awesome-icon icon="fa-brands fa-square-instagram" size="3x"/></a>
+          <a href="https://www.youtube.com/user/BesLaSalle"> <font-awesome-icon icon="fa-brands fa-square-youtube" size="3x"/></a>
         </div>
       </div>
     </section>

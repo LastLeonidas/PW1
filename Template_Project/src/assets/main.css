@@ -35,11 +35,11 @@ header .navbar img
     padding: 0 30px;
 }
 
-.nav_links li a {
+.nav_links li font-awesome-icon {
     transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover {
+.nav_links li font-awesome-icon:hover {
     color: rgba(190,1,69,1);
 }
 
