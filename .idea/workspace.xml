@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1906b9a-5488-4b92-8062-06705ae32d40" name="Changes" comment="Pequeño error de indexación con el server">
+    <list default="true" id="a1906b9a-5488-4b92-8062-06705ae32d40" name="Changes" comment="Pantalla acabada. Faltaran los últimos retoques.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleUsuarioHome.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleUsuarioHome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Template_Project/src/views/UsuarioHome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/views/UsuarioHome.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +66,7 @@
       <workItem from="1667588106824" duration="1516000" />
       <workItem from="1668108751159" duration="556000" />
       <workItem from="1668245291928" duration="4099000" />
-      <workItem from="1668249875542" duration="1709000" />
+      <workItem from="1668249875542" duration="2635000" />
     </task>
     <task id="LOCAL-00001" summary="He aplicado algunos retoques al icono de la search bar así como cambiado el estilo de la letra al título.">
       <created>1667485274185</created>
@@ -91,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668246436689</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Pantalla acabada. Faltaran los últimos retoques.">
+      <created>1668251690547</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668251690547</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +117,7 @@
     <MESSAGE value="He aplicado algunos retoques al icono de la search bar así como cambiado el estilo de la letra al título." />
     <MESSAGE value="Estructura de la nueva vista hecha!" />
     <MESSAGE value="Pequeño error de indexación con el server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pequeño error de indexación con el server" />
+    <MESSAGE value="Pantalla acabada. Faltaran los últimos retoques." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pantalla acabada. Faltaran los últimos retoques." />
   </component>
 </project>

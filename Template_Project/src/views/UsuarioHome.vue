@@ -1,5 +1,6 @@
 <template>
   <link rel="stylesheet" href="src/assets/styles/styleUsuarioHome.css" />
+
   <section class="body">
     <section class="arriba">
       <section class="opcionesArriba">
@@ -30,10 +31,8 @@
 
 <script>
 export default {
-  name: "UsuarioHome"
-}
+  name: "UsuarioHome",
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

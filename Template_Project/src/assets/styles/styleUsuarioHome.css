@@ -1,12 +1,12 @@
+@import url('https://fonts.gooleapis.com/css2?family=League+Gothic&family=Oswald:wght@600&display=swap');
+
 .body {
     display: flex;
     flex-direction: column;
-    /*background-color: red;*/
     height: 94vh;
 }
 
 .arriba {
-    /*background-color: aqua;*/
     height: 47vh;
     display: flex;
     flex-direction: row;
@@ -23,7 +23,6 @@
 }
 
 .abajo {
-    /*background-color: black;*/
     height: 47vh;
     display: flex;
     flex-direction: row;
@@ -50,4 +49,6 @@ h2 {
     justify-content: center;
     align-items: center;
     padding-bottom: 200px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
 }
