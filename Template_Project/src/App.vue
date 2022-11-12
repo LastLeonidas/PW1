@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 </script>
 <template>
+
   <header>
     <section class="navbar">
       <img class="logo-navbar" src="src/assets/media/imagenes/logoOpenEventsBlanco.svg" alt="Logo Open Events">
