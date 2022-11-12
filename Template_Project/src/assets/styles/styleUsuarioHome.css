@@ -38,12 +38,13 @@
     margin: 80px;
 }
 
-img {
+.imagenesIconos {
     margin: 20px;
     padding-left: 25px;
+    width: 150px;
 }
 
-h2 {
+.nombreSecciones {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,4 +52,46 @@ h2 {
     padding-bottom: 200px;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .body {
+        display: flex;
+        flex-direction: row;
+        height: 96vh;
+    }
+    .arriba {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcionesArriba {
+        background-color: #D9D9D9;
+        height: 100px;
+        width: 150px;
+        border-radius: 15px;
+    }
+
+    .abajo {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcionesAbajo {
+        background-color: #D9D9D9;
+        height: 100px;
+        width: 150px;
+        border-radius: 15px;
+    }
+
+    .imagenesIconos {
+        width: 50px;
+        padding-left: 25px;
+    }
 }
