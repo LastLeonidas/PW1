@@ -47,9 +47,9 @@
                 <input type="url" placeholder="Enter the url" required>
               </div>
             </div>
-            <div class="button">
+            <div class="buttonSubmitRegister">
               <a href="/usuarioHome">
-                <input type="submit" value="Register" />
+                <input type="button" value="Register" />
               </a>
             </div>
 

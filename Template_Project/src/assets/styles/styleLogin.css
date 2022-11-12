@@ -16,20 +16,13 @@ body {
     background-size: 100% 100%;
 }
 
-html, body {
-    display: grid;
-    height: 100%;
-    padding-left: 70px;
-    padding-top: 45px;
-}
-
 .wrapper {
     width: 400px;
     background: #fff;
     padding: 30px;
     border-radius: 8px;
-    margin-top: 100px;
-    margin-left: 15px;
+    margin-top: 150px;
+    margin-left: 200px;
     float: left;
     box-shadow: 0 0 .2rem #fff,
     0 0 .1rem #fff,
@@ -93,7 +86,7 @@ html, body {
 .form-inner form .signup-link a:hover {
     text-decoration: underline;
 }
-form .field input[type="submit"] {
+form .field input[type="button"] {
     color: #fff;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
