@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Últimos cambios">
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/App.vue" afterDir="false" />
+    <list default="true" id="a03f3220-65d5-4dd8-ad17-cc80d494e990" name="Changes" comment="Fixed Pantalla Add Friends">
       <change beforePath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleAgregarAmigo.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/assets/styles/styleAgregarAmigo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_Project/src/views/AgregarAmigoView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Template_Project/src/views/AgregarAmigoView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668259734221</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed Pantalla Add Friends">
+      <created>1668275607499</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668275607499</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +178,7 @@
     <MESSAGE value="Pantalla Register finalizada junto a al footer y navbar." />
     <MESSAGE value="Fixed Social Logos Footer" />
     <MESSAGE value="Fixed Error Navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Error Navbar" />
+    <MESSAGE value="Fixed Pantalla Add Friends" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Pantalla Add Friends" />
   </component>
 </project>
