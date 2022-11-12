@@ -13,7 +13,7 @@
       </section>
     </section>
     <section class="seccionDerecha">
-      <img src="src/assets/images/imagenAmigos.jpeg" alt="Imagen Fiesta" width="480" />
+      <img src="../assets/media/imagenes/imagenAmigos.jpeg" alt="Imagen Fiesta" width="480" />
     </section>
   </section>
 </template>
