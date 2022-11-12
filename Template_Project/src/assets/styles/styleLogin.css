@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap');
+
+header, footer {
+    display: none;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "LEMON MILK", serif;
 }
 
-html {
-    background-image: url("../media/imagenes/fotologin.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
+    background: url("../media/imagenes/fotoLogin.jpg") no-repeat center center fixed;
+    height: 100%;
+    background-size: 100% 100%;
 }
 
 html, body {
@@ -24,6 +28,8 @@ html, body {
     background: #fff;
     padding: 30px;
     border-radius: 8px;
+    margin-top: 100px;
+    margin-left: 15px;
     float: left;
     box-shadow: 0 0 .2rem #fff,
     0 0 .1rem #fff,
@@ -32,9 +38,11 @@ html, body {
     0 0 2rem #E31164FF,
     inset 0 0 1rem #E31164FF;
 }
+
 .wrapper .logo-title {
     display: flex;
     width: 200%;
+    font-family: 'Oswald', sans-serif;
 }
 .wrapper .logo-title .title {
     width: 50%;
@@ -45,16 +53,14 @@ html, body {
 .wrapper .form-container  {
     width: 100%;
 }
-.wrapper .form-container form {
 
-}
 .form-inner form .field {
     height: 50px;
     width: 100%;
     margin-top: 20px;
 }
 .form-inner form .field input {
-    font-family: Coolvetica, serif;
+    font-family: 'Montserrat', sans-serif;
     height: 100%;
     width: 100%;
     outline: none;
@@ -81,6 +87,7 @@ html, body {
 .form-inner form .signup-link {
     text-align: center;
     margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
 }
 .form-inner form .pass-link a:hover,
 .form-inner form .signup-link a:hover {
@@ -88,11 +95,30 @@ html, body {
 }
 form .field input[type="submit"] {
     color: #fff;
-    font-family: "LEMON MILK", serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     font-weight: 500;
     padding-left: 0;
     border: none;
     cursor: pointer;
     background: linear-gradient(257deg, rgba(245,7,77,1) 0%, rgba(227,17,100,1) 50%, rgba(198,38,63,1) 100%);
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 300px;
+        height: 400px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        margin-top: 100px;
+        margin-left: 15px;
+        float: left;
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .1rem #fff,
+        0 0 1rem #E31164FF,
+        0 0 1rem #E31164FF,
+        0 0 2rem #E31164FF,
+        inset 0 0 1rem #E31164FF;
+    }
 }
