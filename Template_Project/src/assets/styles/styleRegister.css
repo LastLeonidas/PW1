@@ -116,3 +116,15 @@ form .button input {
 .form-inner form .signIn-link a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        max-width: 400px;
+        width: 60%;
+        background: #fff;
+        margin-top: 100px;
+        margin-left: 100px;
+        padding: 35px 30px 35px 60px ;
+        border-radius: 8px;
+    }
+}
