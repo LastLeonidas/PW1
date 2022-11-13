@@ -11,8 +11,8 @@ import { RouterLink, RouterView } from "vue-router";
       /></a>
       <nav>
         <ul class="nav_links">
-          <li><RouterLink to="/">Home</RouterLink></li>
-          <li><RouterLink to="/events">Events</RouterLink></li>
+          <li><RouterLink to="/eventslist">Home</RouterLink></li>
+          <li><RouterLink to="/eventslist">Events</RouterLink></li>
           <li><RouterLink to="/about">About</RouterLink></li>
           <li><RouterLink to="/addfriend">Add Friend</RouterLink></li>
           <li><RouterLink to="/requestfriends">Friends Request</RouterLink></li>
