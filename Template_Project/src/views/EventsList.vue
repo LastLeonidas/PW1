@@ -48,7 +48,8 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap');
+
   p{
     margin: 0;
     font-style: italic;
@@ -93,6 +94,7 @@ export default {
   }
   .crearEvento button {
     width: 20vw;
+    align-content: center;
   }
 
   .event{
@@ -103,8 +105,9 @@ export default {
     padding: 5vh;
   }
   .infoEvent{
+    display: inline-block;
     margin-left: 5vw;
-    margin-top: 0;
+    margin-top: 5vh;
     margin-bottom: auto;
   }
 

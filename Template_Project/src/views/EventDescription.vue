@@ -70,7 +70,13 @@
         </p>
       </div>
       <div class="make-comment">
-
+        <h2>Make your Comment</h2>
+        <form action="#">
+          <input type="text" name="name" placeholder="Name...">
+          <input type="number" name="num" placeholder="Rate this event">
+          <textarea name="comment" placeholder="Type your comment..."></textarea>
+          <button type="submit">Submit Comment</button>
+        </form>
       </div>
     </div>
   </div>
@@ -153,6 +159,48 @@ export default {
   margin-left: 0;
   margin-right: auto;
   font-size: 20px;
+}
+.make-comment {
+  align-items: center;
+}
+.make-comment h2 {
+  margin: 20px;
+}
+.make-comment input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #bb1c3c;
+}
+.make-comment input:focus {
+  border: 1px black;
+  outline: 0;
+}
+
+.make-comment textarea {
+  width: 100%;
+  height: 150px;
+  padding: 20px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #bb1c3c;
+}
+.make-comment textarea:focus {
+  border: 1px black;
+  outline: 0;
+}
+.make-comment button {
+  width: 20vw;
+  height: 5vh;
+  display: block;
+  color: white;
+  font-size: 3vh;
+  border-radius: 20vh;
+  background: #bb1c3c;
+  border-color: #bb1c3c;
+  margin: auto;
 }
 
 @media screen and (max-width: 420px) {
