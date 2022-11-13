@@ -44,5 +44,6 @@ export default {
 }
 </script>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap');
   @import "../assets/styles/styleProfile.css";
 </style>

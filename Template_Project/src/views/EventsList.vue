@@ -48,6 +48,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap');
   p{
     margin: 0;
     font-style: italic;
