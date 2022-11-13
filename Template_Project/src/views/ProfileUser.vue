@@ -2,11 +2,11 @@
   <div class="container">
     <div class="profile-box">
       <div class="rowSettings">
-        <img src="../images/Settings_Icon.png" class="setting-icon" alt="" width="35" height="35" style="border-radius: 50%; margin-bottom: 20px">
+        <img class = "icon" src="../images/Settings_Icon.png" alt="">
       </div>
       <div class="rowProfile">
         <div class="column">
-          <img src="https://images2.alphacoders.com/127/1273323.jpg" class="imageProfile" sizes="200dp" width="170" height="170" alt="">
+          <img src="https://images2.alphacoders.com/127/1273323.jpg" class="imageProfile" sizes="200dp" alt="">
         </div>
         <div class="columnName">
           <div class="rowName">
@@ -14,9 +14,8 @@
             <h3>&nbsp</h3>
             <h3>Kushinada</h3>
           </div>
-          <p>Netrunner and Deuteragonist</p>
         </div>
-        <img src="../images/FFFFFF.png" class="setting-icon" alt="" width="35" height="35" style="margin-left: 50px">
+        <img src="../images/FFFFFF.png" class="iconAdd" alt="">
       </div>
     </div>
     <div class="profile-info">
@@ -45,5 +44,5 @@ export default {
 }
 </script>
 <style>
-@import "../assets/styleProfile.css";
+  @import "../assets/styleProfile.css";
 </style>

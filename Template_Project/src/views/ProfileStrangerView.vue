@@ -2,7 +2,7 @@
   <div class="container">
     <div class="profile-box">
       <div class="rowSettings">
-        <img src="../images/FFFFFF.png" class="setting-icon" alt="" width="35" height="35" style="border-radius: 50%; margin-bottom: 20px">
+        <img class = "icon" src="../images/FFFFFF.png" alt="">
       </div>
       <div class="rowProfile">
         <div class="column">
@@ -14,9 +14,8 @@
             <h3>&nbsp</h3>
             <h3>Kushinada</h3>
           </div>
-          <p>Netrunner and Deuteragonist</p>
         </div>
-        <img src="../images/Add_friends_icon.png" class="setting-icon" alt="" width="35" height="35" style="margin-left: 50px">
+        <img src="../images/Add_friends_icon.png" class="iconAdd" alt="">
       </div>
     </div>
     <div class="profile-info">
