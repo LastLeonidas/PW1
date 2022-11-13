@@ -128,7 +128,7 @@ export default {
       width: 80px;
       height: 20px;
       font-size: 10px;
-      margin-left: auto;
+      margin-left: 20px;
       margin-right: 10px;
       text-align: center;
     }
@@ -136,6 +136,7 @@ export default {
       margin: 0;
       padding: 5px 0 0;
       align-items: center;
+      text-align: center;
     }
     .infoEvent {
       margin-left: 20px;
