@@ -26,7 +26,7 @@
         <h2 class="nombreSecciones">Close Session</h2>
       </section>
       <section class="opcionesAbajo">
-        <a href="/home">
+        <a href="/deleteaccount">
           <img class="imagenesIconos" src="../assets/media/imagenes/eliminar-cuenta.png" alt="Logo Eliminar Cuenta">
         </a>
         <h2 class="nombreSecciones">Delete Account</h2>
