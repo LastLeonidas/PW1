@@ -27,7 +27,29 @@
     justify-content: flex-start;
 }
 
-.search > .nameUser, .tituloAddFriends{
+.buttonAcceptRequest {
+    padding: 9px 25px;
+    margin-left: 750px;
+    margin-right: 50px;
+    background-color: rgba(190, 1, 69, 1);;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+.buttonDenyRequest {
+    padding: 9px 25px;
+    background-color: rgba(190, 1, 69, 1);;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+.search > .nameUser, .tituloSearchRequest{
     font-family: 'Oswald', sans-serif;
     display: flex;
     flex-direction: column;
@@ -63,7 +85,7 @@
         Outline is created outside the element.*/
 }
 
-.buttonDiv, a .buttonFriendsRequest {
+.buttonDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;

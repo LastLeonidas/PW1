@@ -16,6 +16,9 @@
         </div>
       </section>
       <div class="buttonDiv">
+        <button class="buttonFriendsRequestSectionFriends" type="button" >Friends Request</button>
+      </div>
+      <div class="buttonDiv">
         <button class="buttonAddFriendsSectionFriends" type="button">Add friend</button>
       </div>
     </section>

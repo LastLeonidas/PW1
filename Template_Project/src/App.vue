@@ -2,21 +2,25 @@
 import { RouterLink, RouterView } from "vue-router";
 </script>
 <template>
-
   <header>
     <section class="navbar">
-      <a href="/"><img src="src/assets/media/imagenes/logoOpenEventsBlanco.svg" alt="Logo Open Events"></a>
+      <a href="/"
+        ><img
+          src="src/assets/media/imagenes/logoOpenEventsBlanco.svg"
+          alt="Logo Open Events"
+      /></a>
       <nav>
         <ul class="nav_links">
           <li><RouterLink to="/">Home</RouterLink></li>
           <li><RouterLink to="/events">Events</RouterLink></li>
           <li><RouterLink to="/about">About</RouterLink></li>
           <li><RouterLink to="/addfriend">Add Friend</RouterLink></li>
-          <li><RouterLink to="/friends">Amigos</RouterLink></li>
+          <li><RouterLink to="/requestfriends">Friends Requests</RouterLink></li>
         </ul>
-
       </nav>
-      <RouterLink to="/login"><button class="btnHeader">LOGIN</button></RouterLink>
+      <RouterLink to="/login"
+        ><button class="btnHeader">LOGIN</button></RouterLink
+      >
     </section>
   </header>
 
@@ -28,13 +32,17 @@ import { RouterLink, RouterView } from "vue-router";
     <section class="section-boxes">
       <div class="box-logo">
         <figure>
-          <a href="/"><img src="src/assets/media/imagenes/logoOpenEventsBlanco.svg" alt="Logo Open Events"></a>
+          <a href="/"
+            ><img
+              src="src/assets/media/imagenes/logoOpenEventsBlanco.svg"
+              alt="Logo Open Events"
+          /></a>
         </figure>
       </div>
 
       <div class="box-description">
         <h2>SOBRE NOSOTROS</h2>
-        <p>Somos el grupo PWIA4, formado por: </p>
+        <p>Somos el grupo PWIA4, formado por:</p>
         <div class="members-list">
           <ul>
             <li>Alba Mayol</li>
@@ -48,11 +56,18 @@ import { RouterLink, RouterView } from "vue-router";
       <div class="box-social-apps">
         <h2>SÍGUENOS</h2>
         <div class="socialApps-logos">
-
-          <a href="https://twitter.com/lasallebcn?lang=es"> <font-awesome-icon icon="fa-brands fa-square-twitter" size="3x"/></a>
-          <a href="https://www.facebook.com/LaSalleBCN"> <font-awesome-icon icon="fa-brands fa-square-facebook" size="3x"/></a>
-          <a href="https://www.instagram.com/lasallebcn/"> <font-awesome-icon icon="fa-brands fa-square-instagram" size="3x"/></a>
-          <a href="https://www.youtube.com/user/BesLaSalle"> <font-awesome-icon icon="fa-brands fa-square-youtube" size="3x"/></a>
+          <a href="https://twitter.com/lasallebcn?lang=es">
+            <font-awesome-icon icon="fa-brands fa-square-twitter" size="3x"
+          /></a>
+          <a href="https://www.facebook.com/LaSalleBCN">
+            <font-awesome-icon icon="fa-brands fa-square-facebook" size="3x"
+          /></a>
+          <a href="https://www.instagram.com/lasallebcn/">
+            <font-awesome-icon icon="fa-brands fa-square-instagram" size="3x"
+          /></a>
+          <a href="https://www.youtube.com/user/BesLaSalle">
+            <font-awesome-icon icon="fa-brands fa-square-youtube" size="3x"
+          /></a>
         </div>
       </div>
     </section>
@@ -62,7 +77,5 @@ import { RouterLink, RouterView } from "vue-router";
         <small>&copy; 2022 <b>Open Events.</b> - All Rights Reserved.</small>
       </div>
     </section>
-
   </footer>
-
 </template>

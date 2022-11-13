@@ -6,6 +6,7 @@ import LoginView from "../views/LoginView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import UsuarioHomeView from "../views/UsuarioHomeView.vue";
 import AmigosView from "../views/AmigosView.vue";
+import RequestFriendsView from "../views/FriendsRequestView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -59,6 +60,11 @@ const router = createRouter({
       path: "/friends",
       name: "friends",
       component: AmigosView,
+    },
+    {
+      path: "/requestfriends",
+      name: "requestfriends",
+      component: RequestFriendsView,
     },
     /*
     {
