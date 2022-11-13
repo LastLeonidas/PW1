@@ -2,7 +2,7 @@
   <div class="container">
     <div class="profile-box">
       <div class="rowSettings">
-        <img class = "icon" src="../images/FFFFFF.png" alt="">
+        <img class = "icon" src="../assets/media/imagenes/FFFFFF.png" alt="">
       </div>
       <div class="rowProfile">
         <div class="column">
@@ -15,7 +15,7 @@
             <h3>Kushinada</h3>
           </div>
         </div>
-        <img src="../images/Add_friends_icon.png" class="iconAdd" alt="">
+        <img src="../assets/media/imagenes/Add_friends_icon.png" class="iconAdd" alt="">
       </div>
     </div>
     <div class="profile-info">
