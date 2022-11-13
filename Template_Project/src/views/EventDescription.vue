@@ -218,5 +218,13 @@ export default {
     border-radius: 3vh;
     font-size: 15px;
   }
+  .make-comment {
+    font-size: 15px;
+  }
+  .make-comment button {
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+  }
 }
 </style>

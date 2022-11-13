@@ -119,7 +119,7 @@ export default {
       margin: 30px 0 0;
     }
     p {
-      font-size: 15px;
+      font-size: 10px;
     }
     h2 {
       font-size: 15px;
@@ -130,6 +130,7 @@ export default {
       font-size: 10px;
       margin-left: auto;
       margin-right: 10px;
+      text-align: center;
     }
     .event {
       margin: 0;
