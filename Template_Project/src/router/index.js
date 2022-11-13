@@ -5,6 +5,7 @@ import AgregarAmigoView from "../views/AgregarAmigoView.vue";
 import LoginView from "../views/LoginView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import UsuarioHomeView from "../views/UsuarioHomeView.vue";
+import AmigosView from "../views/AmigosView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -63,6 +64,10 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: EventsView,
     },*/
+      path: "/amigos",
+      name: "amigos",
+      component: AmigosView,
+    },
   ],
 });
 

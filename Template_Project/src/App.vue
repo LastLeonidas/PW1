@@ -12,7 +12,9 @@ import { RouterLink, RouterView } from "vue-router";
           <li><RouterLink to="/events">Events</RouterLink></li>
           <li><RouterLink to="/about">About</RouterLink></li>
           <li><RouterLink to="/addfriend">Add Friend</RouterLink></li>
+          <li><RouterLink to="/amigos">Amigos</RouterLink></li>
         </ul>
+
       </nav>
       <RouterLink to="/login"><button class="btnHeader">LOGIN</button></RouterLink>
     </section>
