@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
-import AgregarAmigoView from "../views/AgregarAmigoView.vue";
+import AgregarAmigoView from "../views/AddFriendsView.vue";
 import LoginView from "../views/LoginView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import UsuarioHomeView from "../views/UsuarioHomeView.vue";
 import AmigosView from "../views/AmigosView.vue";
 import RequestFriendsView from "../views/FriendsRequestView.vue";
+import CloseSesionView from "../views/CloseSesionView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -65,6 +66,11 @@ const router = createRouter({
       path: "/requestfriends",
       name: "requestfriends",
       component: RequestFriendsView,
+    },
+    {
+      path: "/closesesion",
+      name: "closesesion",
+      component: CloseSesionView,
     },
     /*
     {

@@ -1,5 +1,5 @@
 <template>
-  <link rel="stylesheet" href="src/assets/styles/styleAgregarAmigo.css" />
+  <link rel="stylesheet" href="src/assets/styles/styleAddFriends.css" />
 
   <section class="body">
     <section class="seccionIzquierda">

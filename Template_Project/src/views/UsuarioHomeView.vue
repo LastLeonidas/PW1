@@ -20,7 +20,7 @@
     </section>
     <section class="abajo">
       <section class="opcionesAbajo">
-        <a href="/home">
+        <a href="/closesesion">
           <img class="imagenesIconos" src="../assets/media/imagenes/cerrar-sesion.png" alt="Logo Cerrar Sesion">
         </a>
         <h2 class="nombreSecciones">Close Session</h2>
