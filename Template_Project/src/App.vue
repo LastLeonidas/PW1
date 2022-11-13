@@ -15,7 +15,7 @@ import { RouterLink, RouterView } from "vue-router";
           <li><RouterLink to="/events">Events</RouterLink></li>
           <li><RouterLink to="/about">About</RouterLink></li>
           <li><RouterLink to="/addfriend">Add Friend</RouterLink></li>
-          <li><RouterLink to="/requestfriends">Friends Requests</RouterLink></li>
+          <li><RouterLink to="/requestfriends">Friends Request</RouterLink></li>
         </ul>
       </nav>
       <RouterLink to="/login"
