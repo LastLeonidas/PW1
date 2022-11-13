@@ -9,6 +9,7 @@ import AmigosView from "../views/AmigosView.vue";
 import RequestFriendsView from "../views/FriendsRequestView.vue";
 import CloseSesionView from "../views/CloseSesionView.vue";
 import DeleteAccountView from "../views/DeleteAccountView.vue";
+import EventDescription from "../views/EventDesciption.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -76,6 +77,11 @@ const router = createRouter({
     {
       path: "/deleteaccount",
       name: "deleteaccount",
+      component: DeleteAccountView,
+    },
+    {
+      path: "/descriptionevent",
+      name: "descriptionevent",
       component: DeleteAccountView,
     },
     /*
