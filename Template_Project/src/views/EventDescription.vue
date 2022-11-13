@@ -24,25 +24,8 @@
         <p>)</p>
       </div>
       <p>Description:</p>
-      <p class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt
-        sagittis diam finibus bibendum. Mauris ornare justo imperdiet nunc
-        eleifend, eget aliquet lectus aliquam. Proin nulla metus, tempus vitae
-        arcu pellentesque, mollis tristique metus. Nam sodales molestie
-        molestie. Praesent porta hendrerit ligula a iaculis. Pellentesque urna
-        velit, eleifend et massa sed, aliquet bibendum lectus. Vestibulum eget
-        varius libero.<br /><br />
-        Nam augue nisl, pellentesque ac tincidunt sed, rhoncus at arcu. Praesent
-        dapibus, odio at eleifend laoreet, velit risus convallis ligula, sit
-        amet consequat velit orci bibendum lorem. Proin lacinia dui ac tempus
-        aliquam. Vestibulum sagittis nibh sit amet nunc imperdiet, ac finibus
-        ligula vulputate. Praesent auctor viverra volutpat. Vivamus fermentum
-        justo est, vitae pharetra nisl porttitor et. Vivamus at neque vel lacus
-        fringilla ultricies. Vestibulum lacinia tellus orci, et ultrices ante
-        volutpat vitae. Praesent id nibh eu mauris fermentum luctus vel
-        vestibulum ipsum. Nam sit amet euismod turpis. Vestibulum luctus arcu
-        leo, a porta neque tristique ut. Mauris ut diam at turpis sodales
-        cursus. Quisque ultricies odio at elit mattis faucibus.
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt  sagittis diam finibus bibendum. Mauris ornare justo imperdiet nunc eleifend, eget aliquet lectus aliquam. Proin nulla metus, tempus vitae  arcu pellentesque, mollis tristique metus. Nam sodales molestie  molestie. Praesent porta hendrerit ligula a iaculis. Pellentesque urna  velit, eleifend et massa sed, aliquet bibendum lectus. Vestibulum eget varius libero.<br /><br />
+        Nam augue nisl, pellentesque ac tincidunt sed, rhoncus at arcu. Praesent  dapibus, odio at eleifend laoreet, velit risus convallis ligula, sit  amet consequat velit orci bibendum lorem. Proin lacinia dui ac tempus  aliquam. Vestibulum sagittis nibh sit amet nunc imperdiet, ac finibus ligula vulputate. Praesent auctor viverra volutpat. Vivamus fermentum justo est, vitae pharetra nisl porttitor et. Vivamus at neque vel lacus fringilla ultricies. Vestibulum lacinia tellus orci, et ultrices ante volutpat vitae. Praesent id nibh eu mauris fermentum luctus vel vestibulum ipsum. Nam sit amet euismod turpis. Vestibulum luctus arcu leo, a porta neque tristique ut. Mauris ut diam at turpis sodales cursus. Quisque ultricies odio at elit mattis faucibus.
       </p>
       <div class="datesDescription">
         <div class="descriptionDiv">
@@ -85,6 +68,9 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra
           ex est. Proin tempus lacus a augue feugiat, interdum pellentesque.
         </p>
+      </div>
+      <div class="make-comment">
+
       </div>
     </div>
   </div>
@@ -156,13 +142,16 @@ export default {
   margin-top: 10px;
 }
 
-.comment-card h3,
+.comment-card h3, .comment-card h4,
 .comment-card p {
   margin-bottom: 1rem;
+  font-size: 20px;
+  text-align: justify;
 }
 .comment-card h2 {
   margin-left: 0;
   margin-right: auto;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 420px) {
