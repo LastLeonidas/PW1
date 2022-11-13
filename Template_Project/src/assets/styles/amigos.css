@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 75px;
 }
 
 .searchBox {
@@ -63,6 +64,7 @@
     justify-content: center;
     height: 10vh;
     width: 10vw;
+    padding-right: 75px;
 }
 
 .buttonDiv > button {
@@ -70,6 +72,9 @@
     background: #BB1C3C;
     border-radius: 10px;
     color: white; /*color text*/
+    height: 5vh;
+    width: 10vw;
+
 }
 
 
@@ -118,4 +123,50 @@
     border-radius: 80px; /*arrodonim la imatge*/
 }
 
+
+@media screen and (max-width: 740px){
+    .searchBox > input {
+        background-color: #D9D9D9;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E");
+        /*background-image: url("search-icon-2.png");*/
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+
+        width: 100px;
+        padding: 9px 4px 9px 40px;
+        border-radius: 12px;
+        border: hidden;
+        outline: none !important;
+        /*  Border is created inside the element,
+            Outline is created outside the element.*/
+    }
+
+    .buttonDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 10vh;
+        width: 20vw;
+        padding-left: 90px;
+
+    }
+
+    .buttonDiv > button {
+        border: none;
+        background: #BB1C3C;
+        border-radius: 10px;
+        color: white; /*color text*/
+        height: 5vh;
+        width: 15vw;
+    }
+
+    .search > h2 {
+        font-family: "Lucida Sans Unicode", serif ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 55px;
+    }
+
+}
 
