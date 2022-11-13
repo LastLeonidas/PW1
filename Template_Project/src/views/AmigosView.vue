@@ -8,10 +8,10 @@
   name is (mostly) used to identify elements in a form.
   -->
   <section class="body">
-    <section style="background: darkslateblue" class="top">
+    <section class="top">
       <section class="search">
-        <h2 style="background: darkcyan">Friends: </h2>
-        <div class="searchBox" style="background: darkgoldenrod">
+        <h2>Friends: </h2>
+        <div class="searchBox">
           <input type="text">
         </div>
       </section>
@@ -20,22 +20,80 @@
         </div>
     </section>
 
-    <section style="background: coral" class="recyclerView">
-        <!--<ul id="friendsList">-->
-        <ul class="list">
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-          <li>Link 4</li>
-          <li>Link 5</li>
-          <li>Link 6</li>
-          <li>Link 7</li>
-          <li>Link 8</li>
-          <li>Link 9</li>
-          <li>Link 10</li>
-          <li>Link 11</li>
-          <li>Link 13</li>
-          <li>Link 13</li>
+    <section class="recyclerView">
+        <ul class="friendsList">
+          <li><div class="amigo">
+            <router-link to="/about">
+              <button class="amigo1" type="button">
+                <img src="src/assets/images/darder.png">
+                <h2>amigo1</h2>
+              </button>
+            </router-link>
+          </div></li>
+          <li><div class="amigo">
+            <router-link to="/about">
+              <button class="amigo1" type="button">
+                <img src="src/assets/images/puado.jpg">
+                <h2>amigo1</h2>
+              </button>
+            </router-link>
+          </div></li>
+          <li><div class="amigo">
+            <router-link to="/about">
+              <button class="amigo1" type="button">
+                <img src="src/assets/images/melamed.jpg">
+                <h2>amigo1</h2>
+              </button>
+            </router-link>
+          </div></li>
+          <li><div class="amigo">
+            <router-link to="/about">
+              <button class="amigo1" type="button">
+                <img src="src/assets/images/souza.png">
+                <h2>amigo1</h2>
+              </button>
+            </router-link>
+          </div></li>
+          <li><div class="amigo">
+            <router-link to="/about">
+              <button class="amigo1" type="button">
+                <img src="src/assets/images/cabrera.png">
+                <h2>amigo1</h2>
+              </button>
+            </router-link>
+          </div></li>
+          <li><div class="amigo">
+            <router-link to="/about">
+              <button class="amigo1" type="button">
+                <img src="src/assets/images/keidibarepng.png">
+                <h2>amigo1</h2>
+              </button>
+            </router-link>
+          </div></li>
+          <li><div class="amigo">
+            <router-link to="/about">
+              <button class="amigo1" type="button">
+                <img src="src/assets/images/joselu.png">
+                <h2>amigo1</h2>
+              </button>
+            </router-link>
+          </div></li>
+          <li><div class="amigo">
+            <router-link to="/about">
+              <button class="amigo1" type="button">
+                <img src="src/assets/images/calero.png">
+                <h2>amigo1</h2>
+              </button>
+            </router-link>
+          </div></li>
+          <li><div class="amigo">
+            <router-link to="/about">
+              <button class="amigo1" type="button">
+                <img src="src/assets/images/oscarGil.png">
+                <h2>amigo1</h2>
+              </button>
+            </router-link>
+          </div></li>
         </ul>
     </section>
   </section>
