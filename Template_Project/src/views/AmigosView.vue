@@ -25,7 +25,7 @@
           <li><div class="amigo">
             <router-link to="/about">
               <button class="amigo1" type="button">
-                <img src="src/assets/images/darder.png">
+                <img src="../assets/media/imagenes/darder.png">
                 <h2>amigo1</h2>
               </button>
             </router-link>
@@ -33,7 +33,7 @@
           <li><div class="amigo">
             <router-link to="/about">
               <button class="amigo1" type="button">
-                <img src="src/assets/images/puado.jpg">
+                <img src="../assets/media/imagenes/puado.jpg">
                 <h2>amigo1</h2>
               </button>
             </router-link>
@@ -41,7 +41,7 @@
           <li><div class="amigo">
             <router-link to="/about">
               <button class="amigo1" type="button">
-                <img src="src/assets/images/melamed.jpg">
+                <img src="../assets/media/imagenes/melamed.jpg">
                 <h2>amigo1</h2>
               </button>
             </router-link>
@@ -49,7 +49,7 @@
           <li><div class="amigo">
             <router-link to="/about">
               <button class="amigo1" type="button">
-                <img src="src/assets/images/souza.png">
+                <img src="../assets/media/imagenes/souza.png">
                 <h2>amigo1</h2>
               </button>
             </router-link>
@@ -57,7 +57,7 @@
           <li><div class="amigo">
             <router-link to="/about">
               <button class="amigo1" type="button">
-                <img src="src/assets/images/cabrera.png">
+                <img src="../assets/media/imagenes/cabrera.png">
                 <h2>amigo1</h2>
               </button>
             </router-link>
@@ -65,7 +65,7 @@
           <li><div class="amigo">
             <router-link to="/about">
               <button class="amigo1" type="button">
-                <img src="src/assets/images/keidibarepng.png">
+                <img src="../assets/media/imagenes/keidibarepng.png">
                 <h2>amigo1</h2>
               </button>
             </router-link>
@@ -73,7 +73,7 @@
           <li><div class="amigo">
             <router-link to="/about">
               <button class="amigo1" type="button">
-                <img src="src/assets/images/joselu.png">
+                <img src="../assets/media/imagenes/joselu.png">
                 <h2>amigo1</h2>
               </button>
             </router-link>
@@ -81,7 +81,7 @@
           <li><div class="amigo">
             <router-link to="/about">
               <button class="amigo1" type="button">
-                <img src="src/assets/images/calero.png">
+                <img src="../assets/media/imagenes/calero.png">
                 <h2>amigo1</h2>
               </button>
             </router-link>
@@ -89,7 +89,7 @@
           <li><div class="amigo">
             <router-link to="/about">
               <button class="amigo1" type="button">
-                <img src="src/assets/images/oscarGil.png">
+                <img src="../assets/media/imagenes/oscarGil.png">
                 <h2>amigo1</h2>
               </button>
             </router-link>
