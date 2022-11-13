@@ -76,7 +76,8 @@ export default {
     border-radius: 20vh;
     background: #BB1C3C;
     border-color: #BB1C3C;
-    margin: auto 5vh 0 auto;
+    margin-left: 7.8125vw;
+    margin-top: 17.331vh;
   }
   hr {
     height:2px;
