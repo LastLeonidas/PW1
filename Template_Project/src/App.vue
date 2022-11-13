@@ -12,7 +12,7 @@ import { RouterLink, RouterView } from "vue-router";
           <li><RouterLink to="/events">Events</RouterLink></li>
           <li><RouterLink to="/about">About</RouterLink></li>
           <li><RouterLink to="/addfriend">Add Friend</RouterLink></li>
-          <li><RouterLink to="/amigos">Amigos</RouterLink></li>
+          <li><RouterLink to="/friends">Amigos</RouterLink></li>
         </ul>
 
       </nav>

@@ -1,3 +1,9 @@
+@import url('https://fonts.gooleapis.com/css2?family=League+Gothic&family=Oswald:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
 
 .body {
     background: #FBFBFB;
@@ -15,20 +21,22 @@
     justify-content: space-between;
 }
 
-
-
 .search {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-.search > h2 {
-    font-family: "Lucida Sans Unicode", serif ;
+.search > .nameUser, .tituloAddFriends{
+    font-family: 'Oswald', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 75px;
+    padding-left: 45px;
+}
+
+.nameUser {
+    font-family: 'Oswald', sans-serif;
 }
 
 .searchBox {
@@ -55,14 +63,14 @@
         Outline is created outside the element.*/
 }
 
-
 .buttonDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 10vh;
     width: 10vw;
-    padding-right: 75px;
+    padding-right: 115px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .buttonDiv > button {
@@ -72,10 +80,8 @@
     color: white; /*color text*/
     height: 5vh;
     width: 10vw;
-
+    font-family: 'Oswald', sans-serif;
 }
-
-
 
 .recyclerView {
     width: 85vw;
@@ -90,7 +96,7 @@
     margin-right: 5vh;
 }
 
-.friendsList > li {
+.friendsList > .listUser {
     padding-bottom: 20px;
 }
 
@@ -108,10 +114,10 @@
 }
 
 .amigo1 > h4{
-    font-family: "Lucida Sans Unicode", serif ;
+    font-family: 'Oswald', sans-serif;
 }
 
-.amigo1 > img {
+.amigo1 > .imageUser {
     width: 8%;
     height: auto;
     margin-block: 4px;
@@ -143,7 +149,7 @@
         height: 10vh;
         width: 20vw;
         padding-left: 90px;
-
+        font-family: 'Oswald', sans-serif;
     }
 
     .buttonDiv > button {
@@ -155,7 +161,7 @@
         width: 15vw;
     }
 
-    .search > h2 {
+    .search > .nameUser {
         font-family: "Lucida Sans Unicode", serif ;
         display: flex;
         flex-direction: column;

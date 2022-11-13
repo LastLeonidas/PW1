@@ -56,8 +56,8 @@ const router = createRouter({
       component: UsuarioHomeView,
     },
     {
-      path: "/amigos",
-      name: "amigos",
+      path: "/friends",
+      name: "friends",
       component: AmigosView,
     },
     /*
@@ -69,7 +69,6 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: EventsView,
     },*/
-
   ],
 });
 
