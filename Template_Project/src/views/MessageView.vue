@@ -193,6 +193,28 @@ export default {
     border-radius: 0;
     margin-right: 15px;
   }
+  @media screen and (max-width: 420px) {
+    .container {
+      max-width: 100vw;
+    }
+    .active h4 {
+      font-size: 5vw;
+    }
+    .active {
+      margin-left: 10vw;
+    }
+    img {
+      width: 60px;
+      height: 60px;
+    }
 
+    .form-control {
+      border: none !important;
+      width: 250px;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+  }
 
 </style>
