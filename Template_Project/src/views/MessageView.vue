@@ -35,7 +35,7 @@
         <input type = "text" class = "form-control" placeholder="write message...">
         <div class ="input-group">
           <span class="input-group-text">
-            <img class = "send-icon" src="images/send-msg-icon.webp" alt="">
+            <img class = "send-icon" src="../../assets/media/imagenes/send-msg-icon.webp" alt="">
           </span>
         </div>
       </div>
