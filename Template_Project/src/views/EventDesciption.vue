@@ -8,7 +8,6 @@
   </div>
   <div class = "main-event">
     <h1>TITULO EVENT</h1>
-    <button>JOIN</button>
     <div class = descriptionDiv>
       <p>Created by&nbsp;</p>
       <p class = "owner">Name Owner</p>
@@ -43,6 +42,7 @@
       <p>Tipo:&nbsp;</p>
       <p class="tipo">Music</p>
     </div>
+    <button>JOIN</button>
   </div>
   <div class = "comment-section">
     <h2>Comments</h2>
@@ -102,14 +102,13 @@ export default {
   width: 10vw;
   height: 5vh;
   display: block;
-  margin-left: auto;
-  margin-right: 0;
   color: white;
   font-size: 3vh;
   border-radius: 20vh;
   background: #BB1C3C;
   border-color: #BB1C3C;
   font-family: Inter, sans-serif;
+  margin: auto
 }
 
 .descriptionDiv {
@@ -139,4 +138,24 @@ export default {
   margin-left: 0;
   margin-right: auto;
 }
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .background {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+  }
+  .main-event button {
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 3vh;
+    font-size: 15px;
+  }
+}
+
 </style>
