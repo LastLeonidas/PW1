@@ -85,9 +85,6 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap');
 
-p,h2,h4 {
-  margin: 5px;
-}
 .container {
   width: 800px;
   height: auto;
