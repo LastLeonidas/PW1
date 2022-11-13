@@ -9,16 +9,15 @@ import AmigosView from "../views/AmigosView.vue";
 import RequestFriendsView from "../views/FriendsRequestView.vue";
 import CloseSesionView from "../views/CloseSesionView.vue";
 import DeleteAccountView from "../views/DeleteAccountView.vue";
-import EventDescription from "../views/EventDescription.vue";
+import EventDescriptionView from "../views/EventDescription.vue";
+import ProfileUserView from "../views/ProfileUser.vue";
+import EventListView from "../views/EventsList.vue";
+import MessageView from "../views/MessageView.vue";
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: "/",
-      name: "home",
-      component: HomeView,
-    },
     {
       path: "/about",
       name: "about",
@@ -80,9 +79,24 @@ const router = createRouter({
       component: DeleteAccountView,
     },
     {
-      path: "/descriptionevent",
-      name: "descriptionevent",
-      component: DeleteAccountView,
+      path: "/profileuser",
+      name: "profileuser",
+      component: ProfileUserView,
+    },
+    {
+      path: "/eventslist",
+      name: "eventslist",
+      component: EventListView,
+    },
+    {
+      path: "/eventsdescription",
+      name: "eventsdescription",
+      component: EventDescriptionView,
+    },
+    {
+      path: "/messageUsers",
+      name: "messageUsers",
+      component: MessageView,
     },
     /*
     {

@@ -262,6 +262,5 @@
     justify-content: center;
     padding-left: 55px;
   }
-
 }
 </style>

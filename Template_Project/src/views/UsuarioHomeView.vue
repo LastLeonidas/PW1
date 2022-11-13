@@ -2,11 +2,15 @@
   <section class="body">
     <section class="arriba">
       <section class="opcionesArriba">
-        <img class="imagenesIconos" src="../assets/media/imagenes/charla.png" alt="Logo Charla">
+        <a href="/messageUsers">
+          <img class="imagenesIconos" src="../assets/media/imagenes/charla.png" alt="Logo Charla">
+        </a>
         <h2 class="nombreSecciones">Chat</h2>
       </section>
       <section class="opcionesArriba">
-        <img class="imagenesIconos" src="../assets/media/imagenes/usuario-de-perfil.png" alt="Logo Perfil Usuario">
+        <a href="/profileuser">
+          <img class="imagenesIconos" src="../assets/media/imagenes/usuario-de-perfil.png" alt="Logo Perfil Usuario">
+        </a>
         <h2 class="nombreSecciones">Profile</h2>
       </section>
       <section class="opcionesArriba">

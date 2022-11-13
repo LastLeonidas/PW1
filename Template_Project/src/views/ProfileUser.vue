@@ -44,5 +44,5 @@ export default {
 }
 </script>
 <style>
-  @import "../assets/styleProfile.css";
+  @import "../assets/styles/styleProfile.css";
 </style>

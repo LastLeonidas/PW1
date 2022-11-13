@@ -11,7 +11,9 @@
           <p>Place: Palau Sant Jordi</p>
           <p>Dates: Tuesday 4th October</p>
         </div>
-        <button>Enter</button>
+        <a href="/eventsdescription">
+          <button>Enter</button>
+        </a>
       </div>
       <div class="event">
         <img src="https://highxtar.com/wp-content/uploads/2022/02/thumb-dua-lipa-balenciaga.jpg" alt="">
@@ -20,7 +22,9 @@
           <p>Place: Palau Sant Jordi</p>
           <p>Dates: Tuesday 4th October</p>
         </div>
-        <button>Enter</button>
+        <a href="/eventsdescription">
+          <button>Enter</button>
+        </a>
       </div>
       <div class="event">
         <img src="https://highxtar.com/wp-content/uploads/2022/02/thumb-dua-lipa-balenciaga.jpg" alt="">
@@ -29,7 +33,9 @@
           <p>Place: Palau Sant Jordi</p>
           <p>Dates: Tuesday 4th October</p>
         </div>
-        <button>Enter</button>
+        <a href="/eventsdescription">
+          <button>Enter</button>
+        </a>
       </div>
     </div>
     <!-- -->
