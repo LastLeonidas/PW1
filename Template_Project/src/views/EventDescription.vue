@@ -175,8 +175,7 @@ export default {
   border: 1px solid #bb1c3c;
 }
 .make-comment input:focus {
-  border: 1px black;
-  outline: 0;
+  border: 1px solid #bb1c3c;
 }
 
 .make-comment textarea {
@@ -188,8 +187,7 @@ export default {
   border: 1px solid #bb1c3c;
 }
 .make-comment textarea:focus {
-  border: 1px black;
-  outline: 0;
+  border: 1px solid #bb1c3c;
 }
 .make-comment button {
   width: 20vw;
