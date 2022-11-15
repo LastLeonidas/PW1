@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+//import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import AgregarAmigoView from "../views/AddFriendsView.vue";
 import LoginView from "../views/LoginView.vue";
@@ -11,7 +11,7 @@ import CloseSesionView from "../views/CloseSesionView.vue";
 import DeleteAccountView from "../views/DeleteAccountView.vue";
 import EventDescriptionView from "../views/EventDescription.vue";
 import ProfileUserView from "../views/ProfileUser.vue";
-import EventListView from "../views/EventsList.vue";
+import EventListView from "../views/EventsListView.vue";
 import MessageView from "../views/MessageView.vue";
 
 
@@ -64,7 +64,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: EventListView,
+      component: UsuarioHomeView,
     },
     {
       path: "/friends",
