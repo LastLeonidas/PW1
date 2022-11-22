@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="crearEvento">
-        <button>Create Event</button>
+        <a href="/createEvent"><button>Create Event</button></a>
       </div>
       <hr>
       <div class="event">

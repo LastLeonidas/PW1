@@ -9,7 +9,8 @@ import AmigosView from "../views/AmigosView.vue";
 import RequestFriendsView from "../views/FriendsRequestView.vue";
 import CloseSesionView from "../views/CloseSesionView.vue";
 import DeleteAccountView from "../views/DeleteAccountView.vue";
-import EventDescriptionView from "../views/EventDescription.vue";
+import CreateEventView from "../views/CrearEventoView.vue";
+import EventDescriptionView from "../views/EventDescriptionView.vue";
 import ProfileUserView from "../views/ProfileUser.vue";
 import EventListView from "../views/EventsListView.vue";
 import MessageView from "../views/MessageView.vue";
@@ -105,6 +106,11 @@ const router = createRouter({
       path: "/messageUsers",
       name: "messageUsers",
       component: MessageView,
+    },
+    {
+      path: "/createEvent",
+      name: "createEvent",
+      component: CreateEventView,
     },
     /*
     {

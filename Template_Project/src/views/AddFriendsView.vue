@@ -1,6 +1,6 @@
 <template>
   <section class="body">
-    <section class="seccionIzquierda">
+    <article class="seccionIzquierda">
       <section class="box">
         <section><h2 class="TituloAddFriend">Find your next event companion</h2></section>
         <section class="searchBar">
@@ -9,10 +9,10 @@
           <input class="inputAddFriend" type="text" placeholder="Username" />
         </section>
       </section>
-    </section>
-    <section class="seccionDerecha">
+    </article>
+    <article class="seccionDerecha">
       <img class="imagenAddFriend" src="../assets/media/imagenes/imagenAmigos.jpeg" alt="Imagen Fiesta" width="480" />
-    </section>
+    </article>
   </section>
 </template>
 
