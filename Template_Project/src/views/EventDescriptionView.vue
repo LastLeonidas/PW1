@@ -82,12 +82,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "EventDesciption",
-};
-</script>
-
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap');
 
