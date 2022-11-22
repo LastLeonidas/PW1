@@ -13,7 +13,7 @@ import CreateEventView from "../views/CrearEventoView.vue";
 import EventDescriptionView from "../views/EventDescriptionView.vue";
 import ProfileUserView from "../views/ProfileUser.vue";
 import EventListView from "../views/EventsListView.vue";
-import MessageView from "../views/MessageView";
+import MessageView from "../views/MessageView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
