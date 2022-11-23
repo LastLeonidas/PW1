@@ -1,38 +1,62 @@
 <template>
   <section class="body">
     <section class="seccionIzquierda">
-      <section class="nombreEvento">
-        <h2 class="textoNombreEvento">Nombre Evento:</h2>
-        <input class="nombreEventoInput" type="text" placeholder="Texto" required />
-      </section>
-      <section class="localizacion">
-        <h2 class="textoLocalizacion">Localización:</h2>
-        <input class="localizacionInput" type="text" placeholder="Texto" required />
-      </section>
-      <section class="descripcion">
-        <h2 class="textoDescripcion">Descripción:</h2>
-        <input class="descripcionInput" type="text" placeholder="Texto" required />
-      </section>
-      <section class="fechaEvento">
-        <h2 class="textoFecha">Fecha Evento:</h2>
-        <input class="fechaEventoInput" type="date" placeholder="Texto" required />
-      </section>
-      <section class="url">
-        <h2 class="textoUrl">URL Imagen:</h2>
+      <div class="nombreEvento">
+        <p class="textoNombreEvento">Nombre Evento:</p>
+        <input
+          class="nombreEventoInput"
+          type="text"
+          placeholder="Texto"
+          required
+        />
+      </div>
+      <div class="localizacion">
+        <p class="textoLocalizacion">Localización:</p>
+        <input
+          class="localizacionInput"
+          type="text"
+          placeholder="Texto"
+          required
+        />
+      </div>
+      <div class="descripcion">
+        <p class="textoDescripcion">Descripción:</p>
+        <input
+          class="descripcionInput"
+          type="text"
+          placeholder="Texto"
+          required
+        />
+      </div>
+      <div class="fechaEvento">
+        <p class="textoFecha">Fecha Evento:</p>
+        <input
+          class="fechaEventoInput"
+          type="date"
+          placeholder="Texto"
+          required
+        />
+      </div>
+      <div class="url">
+        <p class="textoUrl">URL Imagen:</p>
         <input class="urlInput" type="url" placeholder="Texto" required />
-      </section>
-      <section class="boton">
+      </div>
+      <div class="boton">
         <button class="botonCrearEvento">Crear Evento</button>
-      </section>
+      </div>
     </section>
     <section class="seccionDerecha">
-      <img class="imagenAddEvent" src="src/assets/media/imagenes/crearEvento.png" alt="Imagen del Evento">
+      <img
+        class="imagenAddEvent"
+        src="src/assets/media/imagenes/crearEvento.png"
+        alt="Imagen del Evento"
+      />
     </section>
   </section>
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap");
 
 .body {
   display: flex;
@@ -57,6 +81,7 @@
 }
 
 .seccionIzquierda {
+  padding-top: 10px;
   width: 50vw;
   display: flex;
   flex-direction: column;
@@ -76,10 +101,15 @@
   flex-direction: row;
 }
 
-.textoLocalizacion, .textoDescripcion, .textoFecha, .textoUrl, .textoBoton, .textoNombreEvento {
+.textoLocalizacion,
+.textoDescripcion,
+.textoFecha,
+.textoUrl,
+.textoNombreEvento {
   padding-left: 25px;
+  padding-top: 10px;
   font-size: 20px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .localizacionInput {
@@ -126,13 +156,13 @@
 }
 
 .botonCrearEvento {
-  background-color: #BB1C3C;
+  background-color: #bb1c3c;
   border-radius: 15px;
   width: 10vw;
   height: 5vh;
   border-style: hidden;
   font-size: 15px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 @media screen and (max-width: 700px) {
@@ -141,13 +171,13 @@
   }
 
   .botonCrearEvento {
-    background-color: #BB1C3C;
+    background-color: #bb1c3c;
     border-radius: 15px;
     width: 20vw;
     height: 5vh;
     border-style: hidden;
     font-size: 15px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
 }
 </style>

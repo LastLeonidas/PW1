@@ -1,23 +1,28 @@
 <template>
   <section class="body">
-    <article class="seccionIzquierda">
-      <section class="box">
-        <section><h2 class="TituloAddFriend">Find your next event companion</h2></section>
-        <section class="searchBar">
-          <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-          <i style="font-size:16px;color:grey" class="fa fa-search" aria-hidden="true"></i>
+    <section class="seccionIzquierda">
+      <div class="box">
+        <div>
+          <p class="TituloAddFriend">Find your next event companion</p>
+        </div>
+        <div class="searchBar">
           <input class="inputAddFriend" type="text" placeholder="Username" />
-        </section>
-      </section>
-    </article>
-    <article class="seccionDerecha">
-      <img class="imagenAddFriend" src="../assets/media/imagenes/imagenAmigos.jpeg" alt="Imagen Fiesta" width="480" />
-    </article>
+        </div>
+      </div>
+    </section>
+    <div class="seccionDerecha">
+      <img
+        class="imagenAddFriend"
+        src="../assets/media/imagenes/imagenAmigos.jpeg"
+        alt="Imagen Fiesta"
+        width="480"
+      />
+    </div>
   </section>
 </template>
 
 <style scoped>
-@import url('https://fonts.gooleapis.com/css2?family=League+Gothic&family=Oswald:wght@600&display=swap');
+@import url("https://fonts.gooleapis.com/css2?family=League+Gothic&family=Oswald:wght@600&display=swap");
 
 .body {
   display: flex;
@@ -61,10 +66,10 @@
 }
 
 .TituloAddFriend {
-  color: #BB1C3C;
+  color: #bb1c3c;
   font-size: 35px;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,19 +77,23 @@
 }
 
 .searchBar {
-  background-color: #D9D9D9;
-  width: 300px;
+  background-color: #d9d9d9;
+  width: 280px;
   height: 25px;
   border-radius: 15px;
   display: flex;
   align-items: center;
-  padding: 10px;
   margin-top: 35px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding: 9px 2px 9px 30px;
 }
 
 .searchBar > .inputAddFriend {
   flex: 1;
-  height: 30px;
+  height: 20px;
   padding-left: 10px;
   border: none;
   outline: none;
@@ -92,11 +101,11 @@
 }
 
 .inputAddFriend {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 ::placeholder {
-  color: #F4F4F4;
+  color: #f4f4f4;
 }
 
 @media screen and (max-width: 700px) {
@@ -118,10 +127,10 @@
   }
 
   .TituloAddFriend {
-    color: #BB1C3C;
+    color: #bb1c3c;
     font-size: 25px;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,7 +166,7 @@
 
 @media screen and (max-width: 700px) and (min-width: 600px) {
   .searchBar {
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     width: 370px;
     height: 25px;
     border-radius: 15px;

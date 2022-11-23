@@ -1,44 +1,64 @@
 <template>
   <section class="body">
     <section class="arriba">
-      <section class="opcionesArriba">
+      <div class="opcionesArriba">
         <a href="/messageUsers">
-          <img class="imagenesIconos" src="../assets/media/imagenes/charla.png" alt="Logo Charla">
+          <img
+            class="imagenesIconos"
+            src="../assets/media/imagenes/charla.png"
+            alt="Logo Charla"
+          />
         </a>
-        <h2 class="nombreSecciones">Chat</h2>
-      </section>
-      <section class="opcionesArriba">
+        <p class="nombreSecciones">Chat</p>
+      </div>
+      <div class="opcionesArriba">
         <a href="/profileuser">
-          <img class="imagenesIconos" src="../assets/media/imagenes/usuario-de-perfil.png" alt="Logo Perfil Usuario">
+          <img
+            class="imagenesIconos"
+            src="../assets/media/imagenes/usuario-de-perfil.png"
+            alt="Logo Perfil Usuario"
+          />
         </a>
-        <h2 class="nombreSecciones">Profile</h2>
-      </section>
-      <section class="opcionesArriba">
+        <p class="nombreSecciones">Profile</p>
+      </div>
+      <div class="opcionesArriba">
         <a href="/friends">
-          <img class="imagenesIconos" src="../assets/media/imagenes/amigos.png" alt="Logo Amigos">
+          <img
+            class="imagenesIconos"
+            src="../assets/media/imagenes/amigos.png"
+            alt="Logo Amigos"
+          />
         </a>
-        <h2 class="nombreSecciones">Friends</h2>
-      </section>
+        <p class="nombreSecciones">Friends</p>
+      </div>
     </section>
     <section class="abajo">
-      <section class="opcionesAbajo">
+      <div class="opcionesAbajo">
         <a href="/closesesion">
-          <img class="imagenesIconos" src="../assets/media/imagenes/cerrar-sesion.png" alt="Logo Cerrar Sesion">
+          <img
+            class="imagenesIconos"
+            src="../assets/media/imagenes/cerrar-sesion.png"
+            alt="Logo Cerrar Sesion"
+          />
         </a>
-        <h2 class="nombreSecciones">Close Session</h2>
-      </section>
-      <section class="opcionesAbajo">
+        <p class="nombreSecciones">Close Session</p>
+      </div>
+      <div class="opcionesAbajo">
         <a href="/deleteaccount">
-          <img class="imagenesIconos" src="../assets/media/imagenes/eliminar-cuenta.png" alt="Logo Eliminar Cuenta">
+          <img
+            class="imagenesIconos"
+            src="../assets/media/imagenes/eliminar-cuenta.png"
+            alt="Logo Eliminar Cuenta"
+          />
         </a>
-        <h2 class="nombreSecciones">Delete Account</h2>
-      </section>
+        <p class="nombreSecciones">Delete Account</p>
+      </div>
     </section>
   </section>
 </template>
 
 <style scoped>
-@import url('https://fonts.gooleapis.com/css2?family=League+Gothic&family=Oswald:wght@600&display=swap');
+@import url("https://fonts.gooleapis.com/css2?family=League+Gothic&family=Oswald:wght@600&display=swap");
 
 * {
   padding: 0;
@@ -60,7 +80,7 @@
 }
 
 .opcionesArriba {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   height: 200px;
   width: 250px;
   border-radius: 15px;
@@ -76,7 +96,7 @@
 }
 
 .opcionesAbajo {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   height: 200px;
   width: 250px;
   border-radius: 15px;
@@ -95,7 +115,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 10px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
 }
 
@@ -114,7 +134,7 @@
   }
 
   .opcionesArriba {
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     height: 100px;
     width: 150px;
     border-radius: 15px;
@@ -129,7 +149,7 @@
   }
 
   .opcionesAbajo {
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     height: 100px;
     width: 150px;
     border-radius: 15px;
