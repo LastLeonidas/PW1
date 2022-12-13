@@ -23,9 +23,28 @@
         <p class="longuitude">46.020</p>
         <p>)</p>
       </div>
-      <p>Description:</p>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt  sagittis diam finibus bibendum. Mauris ornare justo imperdiet nunc eleifend, eget aliquet lectus aliquam. Proin nulla metus, tempus vitae  arcu pellentesque, mollis tristique metus. Nam sodales molestie  molestie. Praesent porta hendrerit ligula a iaculis. Pellentesque urna  velit, eleifend et massa sed, aliquet bibendum lectus. Vestibulum eget varius libero.<br /><br />
-        Nam augue nisl, pellentesque ac tincidunt sed, rhoncus at arcu. Praesent  dapibus, odio at eleifend laoreet, velit risus convallis ligula, sit  amet consequat velit orci bibendum lorem. Proin lacinia dui ac tempus  aliquam. Vestibulum sagittis nibh sit amet nunc imperdiet, ac finibus ligula vulputate. Praesent auctor viverra volutpat. Vivamus fermentum justo est, vitae pharetra nisl porttitor et. Vivamus at neque vel lacus fringilla ultricies. Vestibulum lacinia tellus orci, et ultrices ante volutpat vitae. Praesent id nibh eu mauris fermentum luctus vel vestibulum ipsum. Nam sit amet euismod turpis. Vestibulum luctus arcu leo, a porta neque tristique ut. Mauris ut diam at turpis sodales cursus. Quisque ultricies odio at elit mattis faucibus.
+      <div class="descriptionDiv">
+        <p>Description:</p>
+      </div>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt
+        sagittis diam finibus bibendum. Mauris ornare justo imperdiet nunc
+        eleifend, eget aliquet lectus aliquam. Proin nulla metus, tempus vitae
+        arcu pellentesque, mollis tristique metus. Nam sodales molestie
+        molestie. Praesent porta hendrerit ligula a iaculis. Pellentesque urna
+        velit, eleifend et massa sed, aliquet bibendum lectus. Vestibulum eget
+        varius libero.<br /><br />
+        Nam augue nisl, pellentesque ac tincidunt sed, rhoncus at arcu. Praesent
+        dapibus, odio at eleifend laoreet, velit risus convallis ligula, sit
+        amet consequat velit orci bibendum lorem. Proin lacinia dui ac tempus
+        aliquam. Vestibulum sagittis nibh sit amet nunc imperdiet, ac finibus
+        ligula vulputate. Praesent auctor viverra volutpat. Vivamus fermentum
+        justo est, vitae pharetra nisl porttitor et. Vivamus at neque vel lacus
+        fringilla ultricies. Vestibulum lacinia tellus orci, et ultrices ante
+        volutpat vitae. Praesent id nibh eu mauris fermentum luctus vel
+        vestibulum ipsum. Nam sit amet euismod turpis. Vestibulum luctus arcu
+        leo, a porta neque tristique ut. Mauris ut diam at turpis sodales
+        cursus. Quisque ultricies odio at elit mattis faucibus.
       </p>
       <div class="datesDescription">
         <div class="descriptionDiv">
@@ -72,9 +91,12 @@
       <div class="make-comment">
         <h2>Make your Comment</h2>
         <form action="#">
-          <input type="text" name="name" placeholder="Name...">
-          <input type="number" name="num" placeholder="Rate this event">
-          <textarea name="comment" placeholder="Type your comment..."></textarea>
+          <input type="text" name="name" placeholder="Name..." />
+          <input type="number" name="num" placeholder="Rate this event" />
+          <textarea
+            name="comment"
+            placeholder="Type your comment..."
+          ></textarea>
           <button type="submit">Submit Comment</button>
         </form>
       </div>
@@ -83,13 +105,14 @@
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap");
 
 .container {
   width: 800px;
   height: auto;
   margin: auto;
   margin-top: 20px;
+  text-align: justify;
 }
 
 .main-event {
@@ -126,6 +149,7 @@
 
 .descriptionDiv {
   display: flex;
+  margin-bottom: 10px;
 }
 .comment {
   margin-top: 0;
@@ -143,7 +167,8 @@
   margin-top: 10px;
 }
 
-.comment-card h3, .comment-card h4,
+.comment-card h3,
+.comment-card h4,
 .comment-card p {
   margin-bottom: 1rem;
   font-size: 20px;
