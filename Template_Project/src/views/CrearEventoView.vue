@@ -206,27 +206,6 @@ async function postEvent(event) {
   const responseText = await response.text();
   console.log(responseText); // logs 'OK'
 }
-
-/*Ejemplo GET
-
-    async function fetchUsersJSON() {
-    let response = await fetch("http://puigmal.salle.url.edu/api/v2/users", {
-    method: "GET",
-    headers: new Headers({
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODcwLCJuYW1lIjoiS2V2aW4iLCJsYXN0X25hbWUiOiJFbGphcnJhdCBPaGF5b24iLCJlbWFpbCI6ImtldmluLmVsamFycmF0QHN0dWRlbnRzLnNhbGxlLnVybC5lZHUiLCJpbWFnZSI6Imh0dHBzOi8vaS5pbWd1ci5jb20vRDc5dXVIUi5wbmclMjIifQ.1z-iQKwX22ukATnGU7I7hsZ1MWgAvvHmXmhn3I35rD4'
-})
-});
-    let users = await response.json();
-
-    return users;
-}
-
-    fetchUsersJSON().then(users => {
-    users;
-    for (let x in users) {
-    console.log(users[x].name)
-}
-});*/
 </script>
 
 <style scoped>
