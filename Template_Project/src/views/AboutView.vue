@@ -43,6 +43,7 @@
 
 .container {
   width: 80%;
+  height: 100vh;
   display: block;
   margin: auto;
   padding-top: 100px;
