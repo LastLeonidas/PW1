@@ -15,8 +15,7 @@
           />
         </div>
       </div>
-      <ol id="list">
-      </ol>
+      <ol id="list"></ol>
     </section>
     <div class="seccionDerecha">
       <img
@@ -33,41 +32,30 @@
 export default {
   methods: {
     getFriends() {
-      let users = fetchUsersJSON();
-      actualizarLista(users);
+      this.fetchUsersJSON();
+    },
+    async fetchUsersJSON() {
+      try {
+        let searchBar = document.getElementById("searchBarInput").value;
+        let response = await fetch(
+          "http://puigmal.salle.url.edu/api/v2/users/search?s=" + searchBar,
+          {
+            method: "GET",
+            headers: new Headers({
+              Authorization:
+                "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODcwLCJuYW1lIjoiS2V2aW4iLCJsYXN0X25hbWUiOiJFbGphcnJhdCBPaGF5b24iLCJlbWFpbCI6ImtldmluLmVsamFycmF0QHN0dWRlbnRzLnNhbGxlLnVybC5lZHUiLCJpbWFnZSI6Imh0dHBzOi8vaS5pbWd1ci5jb20vRDc5dXVIUi5wbmclMjIifQ.1z-iQKwX22ukATnGU7I7hsZ1MWgAvvHmXmhn3I35rD4",
+            }),
+          }
+        );
+        let users = await response.json();
+        console.log(users);
+        return users;
+      } catch (error) {
+        console.error(error);
+      }
     },
   },
 };
-
-async function fetchUsersJSON() {
-  let searchBar = document.getElementById("searchBarInput").value;
-  let response = await fetch(
-    "http://puigmal.salle.url.edu/api/v2/users/search?s=" + searchBar,
-    {
-      method: "GET",
-      headers: new Headers({
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODcwLCJuYW1lIjoiS2V2aW4iLCJsYXN0X25hbWUiOiJFbGphcnJhdCBPaGF5b24iLCJlbWFpbCI6ImtldmluLmVsamFycmF0QHN0dWRlbnRzLnNhbGxlLnVybC5lZHUiLCJpbWFnZSI6Imh0dHBzOi8vaS5pbWd1ci5jb20vRDc5dXVIUi5wbmclMjIifQ.1z-iQKwX22ukATnGU7I7hsZ1MWgAvvHmXmhn3I35rD4",
-      }),
-    }
-  );
-  let users = await response.json();
-  console.log(users);
-  return users;
-}
-
-function actualizarLista(users) {
-  console.log("hola");
-  console.log(users);
-  //let searchBar = document.getElementById("searchBarInput").value;
-  let completelist = document.getElementById("list");
-  for (let i = 0; i < users.length; i++) {
-    completelist.innerHTML += "<li>Item " + i + "</li>";
-  }
-  //if (searchBar.change) {
-    //completelist.remove();
-  //}
-}
 </script>
 
 <style scoped>

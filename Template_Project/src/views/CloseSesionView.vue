@@ -12,8 +12,11 @@
         </div>
 
         <div class="buttonReturnHome">
-          <RouterLink to="/"><button class="btnReturnHome">Return to principal page</button></RouterLink
-          >
+          <RouterLink to="/login"
+            ><button class="btnReturnHome">
+              Return to login page
+            </button></RouterLink
+          >>
         </div>
       </div>
     </div>

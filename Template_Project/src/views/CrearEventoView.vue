@@ -2,6 +2,7 @@
   <section class="body">
     <section class="seccionIzquierda">
       <form onsubmit="return false;">
+      <!-- <form> -->
         <div class="nombre">
           <p class="textoNombre">Name:</p>
           <input
@@ -101,7 +102,7 @@
           />
         </div>
         <div class="boton">
-          <button class="botonCrearEvento" @:click="mostrarInputs">
+          <button class="botonCrearEvento" @:click="mostrarInputs()">
             Create Event
           </button>
         </div>
@@ -132,80 +133,84 @@ export default {
       let numParticipantes = document.getElementById("participantes").value;
       let tipo = document.getElementById("tipo").value;
 
-      if (latitud !== "" && longitud !== "") {
-        let evento = {
-          name: nombre,
-          image: imagen,
-          location: localizacion,
-          latitude: latitud,
-          longitude: longitud,
-          description: descripcion,
-          eventStart_date: fechaInicio,
-          eventEnd_date: fechaFinal,
-          n_participators: numParticipantes,
-          type: tipo,
-        };
-        postEvent(evento);
-      } else {
-        if (latitud === "" && longitud === "") {
-          let evento = {
-            name: nombre,
-            image: imagen,
-            location: localizacion,
-            description: descripcion,
-            eventStart_date: fechaInicio,
-            eventEnd_date: fechaFinal,
-            n_participators: numParticipantes,
-            type: tipo,
-          };
-          postEvent(evento);
-        } else {
-          if (latitud === "") {
-            let evento = {
-              name: nombre,
-              image: imagen,
-              location: localizacion,
-              longitude: longitud,
-              description: descripcion,
-              eventStart_date: fechaInicio,
-              eventEnd_date: fechaFinal,
-              n_participators: numParticipantes,
-              type: tipo,
-            };
-            postEvent(evento);
-          } else {
-            let evento = {
-              name: nombre,
-              image: imagen,
-              location: localizacion,
-              latitude: latitud,
-              description: descripcion,
-              eventStart_date: fechaInicio,
-              eventEnd_date: fechaFinal,
-              n_participators: numParticipantes,
-              type: tipo,
-            };
-            postEvent(evento);
+      let evento = {
+        name: nombre,
+        image: imagen,
+        location: localizacion,
+        latitude: null,
+        longitude: null,
+        description: descripcion,
+        eventStart_date: fechaInicio,
+        eventEnd_date: fechaFinal,
+        n_participators: numParticipantes,
+        type: tipo,
+      };
+
+      if (latitud !== "") {
+        evento.latitude = latitud;
+      }
+
+      if (longitud !== "") {
+        evento.longitude = longitud;
+      }
+
+      this.checkData(evento);
+    },
+    async postEvent(event) {
+      try {
+        const response = await fetch(
+          "http://puigmal.salle.url.edu/api/v2/events",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization:
+                "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODcwLCJuYW1lIjoiS2V2aW4iLCJsYXN0X25hbWUiOiJFbGphcnJhdCBPaGF5b24iLCJlbWFpbCI6ImtldmluLmVsamFycmF0QHN0dWRlbnRzLnNhbGxlLnVybC5lZHUiLCJpbWFnZSI6Imh0dHBzOi8vaS5pbWd1ci5jb20vRDc5dXVIUi5wbmclMjIifQ.1z-iQKwX22ukATnGU7I7hsZ1MWgAvvHmXmhn3I35rD4",
+            },
+            body: JSON.stringify(event),
           }
+        );
+        const responseText = await response.text();
+        console.log(responseText); // logs 'OK'
+        return response.status !== 400;
+      } catch (error) {
+        console.error(error);
+        return false;
+      }
+    },
+    async checkData(event) {
+      if (!this.isFloat(event.latitude)) {
+        alert("The entered latitude value is invalid. Must be a float.");
+      } else if (!this.isFloat(event.longitude)) {
+        alert("The entered longitud value is invalid. must be a float.");
+      } else if (
+        !this.isDateAfter(event.eventEnd_date, event.eventStart_date)
+      ) {
+        alert("Error: The end date is earlier than the start date.");
+      } else if (!this.isUrlValid(event.image)) {
+        alert("Please enter a valid url.");
+      } else {
+        const response = await this.postEvent(event);
+        console.log(response);
+        if (response) {
+          this.$router.replace({ name: "eventslist" });
         }
       }
     },
+    isFloat(value) {
+      //Usa una expresión regular para comprobar si la cadena es un número flotante con un punto
+      return /^[+-]?\d+(\.\d+)?$/.test(value);
+    },
+    isDateAfter(date1, date2) {
+      return Date.parse(date1) > Date.parse(date2);
+    },
+    isUrlValid(url) {
+      const urlRegex =
+        /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:[/?#]\S*)?$/i;
+      return urlRegex.test(url);
+    },
   },
 };
-
-async function postEvent(event) {
-  const response = await fetch("http://puigmal.salle.url.edu/api/v2/events", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODcwLCJuYW1lIjoiS2V2aW4iLCJsYXN0X25hbWUiOiJFbGphcnJhdCBPaGF5b24iLCJlbWFpbCI6ImtldmluLmVsamFycmF0QHN0dWRlbnRzLnNhbGxlLnVybC5lZHUiLCJpbWFnZSI6Imh0dHBzOi8vaS5pbWd1ci5jb20vRDc5dXVIUi5wbmclMjIifQ.1z-iQKwX22ukATnGU7I7hsZ1MWgAvvHmXmhn3I35rD4",
-    },
-    body: JSON.stringify(event),
-  });
-  const responseText = await response.text();
-  console.log(responseText); // logs 'OK'
-}
 </script>
 
 <style scoped>

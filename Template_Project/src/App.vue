@@ -4,14 +4,14 @@ import { RouterLink, RouterView } from "vue-router";
 <template>
   <header>
     <section class="navbar">
-      <a href="/"
+      <a href="/usuarioHome"
         ><img
           src="src/assets/media/imagenes/logoOpenEventsBlanco.svg"
           alt="Logo Open Events"
       /></a>
       <nav>
         <ul class="nav_links">
-          <li><RouterLink to="/">Home</RouterLink></li>
+          <li><RouterLink to="/usuarioHome">Home</RouterLink></li>
           <li><RouterLink to="/eventslist">Events</RouterLink></li>
           <li><RouterLink to="/about">About</RouterLink></li>
           <li><RouterLink to="/addfriend">Add Friend</RouterLink></li>
@@ -32,7 +32,7 @@ import { RouterLink, RouterView } from "vue-router";
     <section class="section-boxes">
       <div class="box-logo">
         <figure>
-          <a href="/"
+          <a href="/usuarioHome"
             ><img
               src="src/assets/media/imagenes/logoOpenEventsBlanco.svg"
               alt="Logo Open Events"

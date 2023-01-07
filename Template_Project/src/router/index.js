@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-//import HomeView from "../views/HomeView.vue";
+
+import UsuarioHomeView from "../views/UsuarioHomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import AgregarAmigoView from "../views/AddFriendsView.vue";
 import LoginView from "../views/LoginView.vue";
 import RegisterView from "../views/RegisterView.vue";
-import UsuarioHomeView from "../views/UsuarioHomeView.vue";
 import AmigosView from "../views/AmigosView.vue";
 import RequestFriendsView from "../views/FriendsRequestView.vue";
 import CloseSesionView from "../views/CloseSesionView.vue";
@@ -20,7 +20,11 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "home",
+      redirect: "/login",
+    },
+    {
+      path: "/usuarioHome",
+      name: "usuarioHome",
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -57,14 +61,6 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: RegisterView,
-    },
-    {
-      path: "/usuarioHome",
-      name: "usuarioHome",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: UsuarioHomeView,
     },
     {
       path: "/friends",

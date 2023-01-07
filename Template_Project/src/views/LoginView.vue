@@ -10,18 +10,33 @@
       </div>
       <div class="form-container">
         <div class="form-inner">
-          <form action="#" class="login">
+          <!-- <form action="#" class="login" onsubmit="return false;"> -->
+          <form id="form">
             <div class="field">
-              <input type="text" placeholder="Email Address" required />
+              <input
+                type="text"
+                placeholder="Email Address"
+                id="email"
+                required
+              />
             </div>
             <div class="field">
-              <input type="password" placeholder="Password" required />
+              <input
+                type="password"
+                placeholder="Password"
+                id="password"
+                required
+              />
             </div>
-            <div class="pass-link"><a href="#">Forgot password?</a></div>
             <div class="field">
-              <a href="/usuarioHome">
-                <input class="buttonSubmitLogin" type="button" value="Login" id="buttonlogin" />
-              </a>
+              <input
+                v-if="!this.sucess"
+                class="buttonSubmitLogin"
+                type="button"
+                value="Login"
+                id="buttonlogin"
+                @click="getInputs()"
+              />
             </div>
             <div class="signup-link">
               Not a Member?
@@ -33,3 +48,71 @@
     </div>
   </section>
 </template>
+
+<script>
+import router from "../router";
+
+export default {
+  data() {
+    return {
+      sucess: null,
+      response: null,
+    };
+  },
+  methods: {
+    async getInputs() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      const user = {
+        email,
+        password,
+      };
+
+      const resultado = await this.postUser(user);
+      this.sucess = resultado.success;
+      this.response = JSON.parse(resultado.response);
+      this.response = this.response.accessToken;
+
+      console.log(this.response);
+
+      if (this.sucess) {
+        await router.push({
+          name: "usuarioHome",
+          params: { token: this.response },
+        });
+        /*this.$router.replace({
+          name: "usuarioHome",
+          params: { accessToken: this.response },
+        });*/
+      } else {
+        alert("The email and/or password field are incorrect.");
+      }
+    },
+    async postUser(user) {
+      try {
+        const response = await fetch(
+          "http://puigmal.salle.url.edu/api/v2/users/login",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(user),
+          }
+        );
+        const responseText = await response.text();
+        console.log(responseText);
+        if (response.status === 200 || response.status === 201) {
+          return { success: true, response: responseText };
+        } else {
+          return { success: false, response: responseText };
+        }
+      } catch (error) {
+        console.log(error);
+        return { success: false, error: error };
+      }
+    },
+  },
+};
+</script>
