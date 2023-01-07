@@ -57,16 +57,6 @@
   </section>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      token: this.$route.params.token,
-    };
-  },
-};
-</script>
-
 <style scoped>
 @import url("https://fonts.gooleapis.com/css2?family=League+Gothic&family=Oswald:wght@600&display=swap");
 

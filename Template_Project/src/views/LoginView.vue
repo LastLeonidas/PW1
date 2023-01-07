@@ -50,6 +50,7 @@
 </template>
 
 <script>
+console.log(localStorage.getItem("token"));
 import router from "../router";
 
 export default {
@@ -73,18 +74,14 @@ export default {
       this.sucess = resultado.success;
       this.response = JSON.parse(resultado.response);
       this.response = this.response.accessToken;
-
       console.log(this.response);
+
+      localStorage.setItem("token", this.response);
 
       if (this.sucess) {
         await router.push({
           name: "usuarioHome",
-          params: { token: this.response },
         });
-        /*this.$router.replace({
-          name: "usuarioHome",
-          params: { accessToken: this.response },
-        });*/
       } else {
         alert("The email and/or password field are incorrect.");
       }

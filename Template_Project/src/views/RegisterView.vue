@@ -138,8 +138,6 @@ export default {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              Authorization:
-                "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODcwLCJuYW1lIjoiS2V2aW4iLCJsYXN0X25hbWUiOiJFbGphcnJhdCBPaGF5b24iLCJlbWFpbCI6ImtldmluLmVsamFycmF0QHN0dWRlbnRzLnNhbGxlLnVybC5lZHUiLCJpbWFnZSI6Imh0dHBzOi8vaS5pbWd1ci5jb20vRDc5dXVIUi5wbmclMjIifQ.1z-iQKwX22ukATnGU7I7hsZ1MWgAvvHmXmhn3I35rD4",
             },
             body: JSON.stringify(newUser),
           }

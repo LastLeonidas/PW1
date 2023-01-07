@@ -158,14 +158,14 @@ export default {
     },
     async postEvent(event) {
       try {
+        const token = localStorage.getItem("token");
         const response = await fetch(
           "http://puigmal.salle.url.edu/api/v2/events",
           {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              Authorization:
-                "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6ODcwLCJuYW1lIjoiS2V2aW4iLCJsYXN0X25hbWUiOiJFbGphcnJhdCBPaGF5b24iLCJlbWFpbCI6ImtldmluLmVsamFycmF0QHN0dWRlbnRzLnNhbGxlLnVybC5lZHUiLCJpbWFnZSI6Imh0dHBzOi8vaS5pbWd1ci5jb20vRDc5dXVIUi5wbmclMjIifQ.1z-iQKwX22ukATnGU7I7hsZ1MWgAvvHmXmhn3I35rD4",
+              Authorization: "Bearer " + token + "",
             },
             body: JSON.stringify(event),
           }

@@ -30,13 +30,13 @@ export default {
       this.$router.push({ name: "login" });
     },
     async deleteUserAPI() {
+      const token = localStorage.getItem("token");
       try {
         await fetch("http://puigmal.salle.url.edu/api/v2/users/", {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",
-            Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MjIyNCwibmFtZSI6InBydWViYSIsImxhc3RfbmFtZSI6InBydWViYSIsImVtYWlsIjoicHJ1ZWJhMzRAZ21haWwuY29tIiwiaW1hZ2UiOiJodHRwczovL3BydWViYS5qcGcifQ.56y17R2QwYNM3jKE5Xq5szdXGEOtCsZ6n_zZJ9krRqg",
+            Authorization: "Bearer " + token + "",
           },
         });
       } catch (error) {
@@ -45,4 +45,6 @@ export default {
     },
   },
 };
+
+localStorage.setItem("token", null);
 </script>

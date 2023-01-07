@@ -22,3 +22,14 @@
     </div>
   </section>
 </template>
+
+<script>
+localStorage.setItem("token", null);
+console.log(localStorage.getItem("token"));
+
+window.addEventListener("popstate", function () {
+  if (localStorage.getItem("token") === null) {
+    this.$route.push({ path: "/login" });
+  }
+});
+</script>
