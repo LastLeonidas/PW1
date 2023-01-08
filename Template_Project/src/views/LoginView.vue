@@ -10,13 +10,12 @@
       </div>
       <div class="form-container">
         <div class="form-inner">
-          <!-- <form action="#" class="login" onsubmit="return false;"> -->
           <form id="form">
             <div class="field">
               <input
                 type="text"
                 placeholder="Email Address"
-                id="email"
+                v-model="email"
                 required
               />
             </div>
@@ -24,18 +23,16 @@
               <input
                 type="password"
                 placeholder="Password"
-                id="password"
+                v-model="password"
                 required
               />
             </div>
             <div class="field">
               <input
-                v-if="!this.sucess"
                 class="buttonSubmitLogin"
                 type="button"
                 value="Login"
-                id="buttonlogin"
-                @click="getInputs()"
+                @click="login()"
               />
             </div>
             <div class="signup-link">
@@ -50,35 +47,27 @@
 </template>
 
 <script>
-console.log(localStorage.getItem("token"));
 import router from "../router";
 
 export default {
   data() {
     return {
-      sucess: null,
-      response: null,
+      email: "",
+      password: "",
     };
   },
   methods: {
-    async getInputs() {
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-
+    async login() {
       const user = {
-        email,
-        password,
+        email: this.email,
+        password: this.password,
       };
 
       const resultado = await this.postUser(user);
-      this.sucess = resultado.success;
-      this.response = JSON.parse(resultado.response);
-      this.response = this.response.accessToken;
-      console.log(this.response);
+      const { accessToken } = JSON.parse(resultado.response);
+      localStorage.setItem("token", accessToken);
 
-      localStorage.setItem("token", this.response);
-
-      if (this.sucess) {
+      if (resultado.success) {
         await router.push({
           name: "usuarioHome",
         });
@@ -99,7 +88,6 @@ export default {
           }
         );
         const responseText = await response.text();
-        console.log(responseText);
         if (response.status === 200 || response.status === 201) {
           return { success: true, response: responseText };
         } else {

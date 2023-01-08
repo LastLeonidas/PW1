@@ -31,11 +31,3 @@ const app = createApp(App);
 app.use(router);
 app.component("font-awesome-icon", FontAwesomeIcon);
 app.mount("#app");
-
-window.addEventListener("popstate", function () {
-  console.log("leoooo");
-  if (localStorage.getItem("token") === null) {
-    //window.location.pathname = "/login";
-    this.$route.push({ path: "/login" });
-  }
-});

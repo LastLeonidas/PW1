@@ -12,7 +12,6 @@
 
       <div class="form-container">
         <div class="form-inner">
-          <!-- <form action="#" class="register" id="form"> -->
           <form class="register" id="form2">
             <div class="user-details">
               <div class="input-box">
@@ -21,7 +20,7 @@
                   type="text"
                   placeholder="Enter your name"
                   required
-                  id="name"
+                  v-model="name"
                 />
               </div>
 
@@ -31,7 +30,7 @@
                   type="text"
                   placeholder="Enter your surname"
                   required
-                  id="surname"
+                  v-model="surname"
                 />
               </div>
 
@@ -41,7 +40,7 @@
                   type="email"
                   placeholder="Enter your email"
                   required
-                  id="email"
+                  v-model="email"
                 />
               </div>
 
@@ -51,7 +50,7 @@
                   type="password"
                   placeholder="Enter your password"
                   required
-                  id="password"
+                  v-model="password"
                 />
               </div>
 
@@ -61,7 +60,7 @@
                   type="password"
                   placeholder="Confirm your password"
                   required
-                  id="confirmPassword"
+                  v-model="confirmPassword"
                 />
               </div>
 
@@ -71,12 +70,12 @@
                   type="url"
                   placeholder="Enter the url"
                   required
-                  id="profilePicture"
+                  v-model="profilePicture"
                 />
               </div>
             </div>
             <div class="buttonSubmitRegister">
-              <input type="button" value="Register" @:click="mostrarInputs()" />
+              <input type="button" value="Register" @:click="register()" />
             </div>
 
             <div class="signIn-link">
@@ -91,32 +90,35 @@
 
 <script>
 export default {
+  data() {
+    return {
+      name: "",
+      surname: "",
+      email: "",
+      password: "",
+      confirmPassword: "",
+      profilePicture: "",
+    };
+  },
   methods: {
-    async mostrarInputs() {
-      let name = document.getElementById("name").value;
-      let surname = document.getElementById("surname").value;
-      let email = document.getElementById("email").value;
-      let password = document.getElementById("password").value;
-      let confirmPassword = document.getElementById("confirmPassword").value;
-      let profilePicture = document.getElementById("profilePicture").value;
-
+    async register() {
       const newUser = {
-        name: name,
-        last_name: surname,
-        email: email,
-        password: password,
-        image: profilePicture,
+        name: this.name,
+        last_name: this.surname,
+        email: this.email,
+        password: this.password,
+        image: this.profilePicture,
       };
 
-      if (name === "" || surname === "" || email === "" || password === "" || profilePicture === "") {
+      if (this.name === "" || this.surname === "" || this.email === "" || this.password === "" || this.profilePicture === "") {
         alert("Please complete all fields.");
-      } else if (!this.isEmailValid(email)) {
+      } else if (!this.isEmailValid(this.email)) {
         alert("Please enter a valid email.");
-      } else if (password !== confirmPassword) {
+      } else if (this.password !== this.confirmPassword) {
         alert("Please the passwords must be the same.");
-      } else if (password.length < 8) {
+      } else if (this.password.length < 8) {
         alert("The email field must have at least 8 characters.");
-      } else if (!this.isUrlValid(profilePicture)) {
+      } else if (!this.isUrlValid(this.profilePicture)) {
         alert("Please enter a valid url.");
       } else {
         const resultado = await this.postUser(newUser);
@@ -142,7 +144,6 @@ export default {
             body: JSON.stringify(newUser),
           }
         );
-
         return response.status !== 400;
       } catch (error) {
         console.error(error);

@@ -2,11 +2,10 @@
   <section class="body">
     <section class="seccionIzquierda">
       <form onsubmit="return false;">
-      <!-- <form> -->
         <div class="nombre">
           <p class="textoNombre">Name:</p>
           <input
-            id="nombre"
+            v-model="nombre"
             class="nombreInput"
             type="text"
             placeholder="Add here"
@@ -16,7 +15,7 @@
         <div class="localizacion">
           <p class="textoLocalizacion">Location:</p>
           <input
-            id="localizacion"
+            v-model="localizacion"
             class="localizacionInput"
             type="text"
             placeholder="Add here"
@@ -26,7 +25,7 @@
         <div class="latitud">
           <p class="textoLatitud">Latitude:</p>
           <input
-            id="latitud"
+            v-model="latitud"
             class="latitudInput"
             type="text"
             placeholder="Add here"
@@ -35,7 +34,7 @@
         <div class="longitud">
           <p class="textoLongitud">Longitude:</p>
           <input
-            id="longitud"
+            v-model="longitud"
             class="longitudInput"
             type="text"
             placeholder="Add here"
@@ -44,7 +43,7 @@
         <div class="descripcion">
           <p class="textoDescripcion">Description:</p>
           <textarea
-            id="descripcion"
+            v-model="descripcion"
             class="descripcionInput"
             placeholder="Add here"
             required
@@ -53,7 +52,7 @@
         <div class="fechaInicio">
           <p class="textoInicioFecha">Start Date:</p>
           <input
-            id="fechaInicio"
+            v-model="fechaInicio"
             class="fechaInicioInput"
             type="date"
             placeholder="Add here"
@@ -63,7 +62,7 @@
         <div class="fechaFinal">
           <p class="textoFinalFecha">End Date:</p>
           <input
-            id="fechaFinal"
+            v-model="fechaFinal"
             class="fechaFinalInput"
             type="date"
             placeholder="Add here"
@@ -73,7 +72,7 @@
         <div class="participantes">
           <p class="textoParticipantes">Participants:</p>
           <input
-            id="participantes"
+            v-model="numParticipantes"
             class="participantesInput"
             type="number"
             placeholder="Add here"
@@ -84,7 +83,7 @@
         <div class="tipo">
           <p class="textoTipo">Type:</p>
           <input
-            id="tipo"
+            v-model="tipo"
             class="tipoInput"
             type="text"
             placeholder="Add here"
@@ -98,11 +97,11 @@
             type="url"
             placeholder="Add here"
             required
-            id="urlImagen"
+            v-model="imagen"
           />
         </div>
         <div class="boton">
-          <button class="botonCrearEvento" @:click="mostrarInputs()">
+          <button class="botonCrearEvento" @:click="crearDatosEvento()">
             Create Event
           </button>
         </div>
@@ -120,40 +119,46 @@
 
 <script>
 export default {
+  data() {
+    return {
+      nombre: "",
+      imagen: "",
+      descripcion: "",
+      localizacion: "",
+      latitud: "",
+      longitud: "",
+      fechaInicio: "",
+      fechaFinal: "",
+      numParticipantes: "",
+      tipo: "",
+      flagLatitud: false,
+      flagLongitud: false,
+    };
+  },
   methods: {
-    mostrarInputs() {
-      let nombre = document.getElementById("nombre").value;
-      let imagen = document.getElementById("urlImagen").value;
-      let localizacion = document.getElementById("localizacion").value;
-      let latitud = document.getElementById("latitud").value;
-      let longitud = document.getElementById("longitud").value;
-      let descripcion = document.getElementById("descripcion").value;
-      let fechaInicio = document.getElementById("fechaInicio").value;
-      let fechaFinal = document.getElementById("fechaFinal").value;
-      let numParticipantes = document.getElementById("participantes").value;
-      let tipo = document.getElementById("tipo").value;
-
+    crearDatosEvento() {
       let evento = {
-        name: nombre,
-        image: imagen,
-        location: localizacion,
+        name: this.nombre,
+        image: this.imagen,
+        location: this.localizacion,
         latitude: null,
         longitude: null,
-        description: descripcion,
-        eventStart_date: fechaInicio,
-        eventEnd_date: fechaFinal,
-        n_participators: numParticipantes,
-        type: tipo,
+        description: this.descripcion,
+        eventStart_date: this.fechaInicio,
+        eventEnd_date: this.fechaFinal,
+        n_participators: this.numParticipantes,
+        type: this.tipo,
       };
 
-      if (latitud !== "") {
-        evento.latitude = latitud;
+      if (this.latitud !== "") {
+        evento.latitude = this.latitud;
+        this.flagLatitud = true;
       }
 
-      if (longitud !== "") {
-        evento.longitude = longitud;
+      if (this.longitud !== "") {
+        evento.longitude = this.longitud;
+        this.flagLongitud = true;
       }
-
       this.checkData(evento);
     },
     async postEvent(event) {
@@ -170,8 +175,6 @@ export default {
             body: JSON.stringify(event),
           }
         );
-        const responseText = await response.text();
-        console.log(responseText); // logs 'OK'
         return response.status !== 400;
       } catch (error) {
         console.error(error);
@@ -179,21 +182,43 @@ export default {
       }
     },
     async checkData(event) {
-      if (!this.isFloat(event.latitude)) {
-        alert("The entered latitude value is invalid. Must be a float.");
-      } else if (!this.isFloat(event.longitude)) {
-        alert("The entered longitud value is invalid. must be a float.");
-      } else if (
-        !this.isDateAfter(event.eventEnd_date, event.eventStart_date)
-      ) {
-        alert("Error: The end date is earlier than the start date.");
-      } else if (!this.isUrlValid(event.image)) {
-        alert("Please enter a valid url.");
+      if (this.flagLatitud && this.flagLongitud) {
+        if (this.nombre === "" || this.imagen === "" || this.description === "" || this.localizacion === "" || this.longitud === "" || this.latitud === "" || this.fechaInicio === "" || this.fechaFinal === "" || this.numParticipantes === "" || this.tipo === "") {
+          alert("Please complete all fields.");
+        } else {
+          if (!this.isFloat(event.latitude)) {
+            alert("The entered latitude value is invalid. Must be a float.");
+          } else if (!this.isFloat(event.longitude)) {
+            alert("The entered longitud value is invalid. must be a float.");
+          } else if (
+            !this.isDateAfter(event.eventEnd_date, event.eventStart_date)
+          ) {
+            alert("Error: The end date is earlier than the start date.");
+          } else if (!this.isUrlValid(event.image)) {
+            alert("Please enter a valid url.");
+          } else {
+            const response = await this.postEvent(event);
+
+            if (response) {
+              this.$router.replace({ name: "eventslist" });
+            }
+          }
+        }
       } else {
-        const response = await this.postEvent(event);
-        console.log(response);
-        if (response) {
-          this.$router.replace({ name: "eventslist" });
+        if (this.nombre === "" || this.imagen === "" || this.description === "" || this.localizacion === "" || this.fechaInicio === "" || this.fechaFinal === "" || this.numParticipantes === "" || this.tipo === "") {
+          alert("Please complete all fields.");
+        } else {
+          if (!this.isDateAfter(event.eventEnd_date, event.eventStart_date)) {
+            alert("Error: The end date is earlier than the start date.");
+          } else if (!this.isUrlValid(event.image)) {
+            alert("Please enter a valid url.");
+          } else {
+            const response = await this.postEvent(event);
+
+            if (response) {
+              this.$router.replace({ name: "eventslist" });
+            }
+          }
         }
       }
     },

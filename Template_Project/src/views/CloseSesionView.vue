@@ -12,11 +12,9 @@
         </div>
 
         <div class="buttonReturnHome">
-          <RouterLink to="/login"
-            ><button class="btnReturnHome">
-              Return to login page
-            </button></RouterLink
-          >>
+          <button class="btnReturnHome" @click="cerrarSesion">
+            Return to login page
+          </button>
         </div>
       </div>
     </div>
@@ -24,12 +22,13 @@
 </template>
 
 <script>
-localStorage.setItem("token", null);
-console.log(localStorage.getItem("token"));
-
-window.addEventListener("popstate", function () {
-  if (localStorage.getItem("token") === null) {
-    this.$route.push({ path: "/login" });
-  }
-});
+import router from "../router";
+export default {
+  methods: {
+    cerrarSesion() {
+      localStorage.setItem("token", null);
+      router.push("/login");
+    },
+  },
+};
 </script>

@@ -32,19 +32,18 @@ export default {
     async deleteUserAPI() {
       const token = localStorage.getItem("token");
       try {
-        await fetch("http://puigmal.salle.url.edu/api/v2/users/", {
+        await fetch("http://puigmal.salle.url.edu/api/v2/users", {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",
             Authorization: "Bearer " + token + "",
           },
         });
+        localStorage.setItem("token", null);
       } catch (error) {
         console.log(error);
       }
     },
   },
 };
-
-localStorage.setItem("token", null);
 </script>
