@@ -57,6 +57,22 @@
   </section>
 </template>
 
+<script>
+import router from "../router";
+
+export default {
+  name: "UsuarioHome",
+  redigirLogin() {
+    if (localStorage.getItem("token") === "null") {
+      console.log("hola");
+      router.push("/login");
+    } else {
+      console.log("hola2");
+    }
+  },
+};
+</script>
+
 <style scoped>
 @import url("https://fonts.gooleapis.com/css2?family=League+Gothic&family=Oswald:wght@600&display=swap");
 

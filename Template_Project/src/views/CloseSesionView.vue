@@ -12,7 +12,7 @@
         </div>
 
         <div class="buttonReturnHome">
-          <button class="btnReturnHome" @click="cerrarSesion">
+          <button class="btnReturnHome">
             Return to login page
           </button>
         </div>
@@ -22,13 +22,9 @@
 </template>
 
 <script>
-import router from "../router";
-export default {
-  methods: {
-    cerrarSesion() {
-      localStorage.setItem("token", null);
-      router.push("/login");
-    },
-  },
-};
+//import router from "../router";
+
+localStorage.setItem("token", null);
+//delay tiempo
+//router.push("/login");
 </script>
